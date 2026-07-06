@@ -8,21 +8,45 @@ Same pattern as:
   https://devn03215.github.io/awgp-books/
   https://devn03215.github.io/privacy-policy/
 
-## One-time setup
+## One-time setup (pick one method)
+
+### Method A — Deploy from branch (recommended, matches awgp-share)
 
 1. Create a public repo: https://github.com/new
    Name: awgpapp-help
    Owner: devn03215
-   Do not add README (we copy from awgp-mobile).
 
-2. Enable Pages: Settings → Pages → Deploy from branch → main → / (root)
+2. Push the site (see “Deploy updates” below).
+
+3. Repo → Settings → Pages → Build and deployment:
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/ (root)**
+   - Save
+
+No GitHub Actions required. Pushing to `main` updates the site in ~1 minute.
+
+### Method B — GitHub Actions
+
+Only if you prefer Actions over branch deploy.
+
+1. Repo → Settings → Pages → Build and deployment:
+   - Source: **GitHub Actions**
+
+2. Ensure `.github/workflows/deploy-pages.yml` is in the repo (copied from `help-landing/`).
+
+3. First run may need approval: Repo → Settings → Environments → `github-pages` → allow deployments.
+
+If deploy fails with “Deployment failed, try again later”:
+   - Switch to **Method A** (branch deploy), or
+   - Re-run the workflow, or
+   - Confirm the repo is **public** (free Pages requires public repos unless you have GitHub Pro).
 
 ## Deploy updates
 
 From awgp-mobile (source of truth):
 
 ```powershell
-# Copy site into the Pages repo
 Copy-Item c:\dev\git\awgp-mobile\help-landing\* c:\dev\git\awgpapp-help\ -Recurse -Force
 
 cd c:\dev\git\awgpapp-help
@@ -35,11 +59,10 @@ git commit -m "Update help center"
 git push
 ```
 
-First-time clone after creating the empty repo:
+First-time clone:
 
 ```powershell
 git clone https://github.com/devn03215/awgpapp-help.git c:\dev\git\awgpapp-help
-# then copy and push as above
 ```
 
 ## Custom domain later
