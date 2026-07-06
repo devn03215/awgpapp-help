@@ -7,7 +7,7 @@ Static help site for the AWGP mobile app ([HelpKit](https://helpkit.so)-style UI
 
 Hosted on GitHub Pages under [devn03215](https://github.com/devn03215):
 
-**https://devn03215.github.io/awgp-help/**
+**https://devn03215.github.io/awgpapp-help/**
 
 (Same account as [awgp-share](https://devn03215.github.io/awgp-share/), [awgp-books](https://devn03215.github.io/awgp-books/), and [privacy-policy](https://devn03215.github.io/privacy-policy/).)
 
@@ -35,7 +35,7 @@ help-landing/
 ## Edit content
 
 1. Change files here in `awgp-mobile`.
-2. Copy to `devn03215/awgp-help` and push (see HOSTING.txt).
+2. Copy to `devn03215/awgpapp-help` and push (see HOSTING.txt).
 
 - **New article:** add to `js/articles.js` and a matching section `id` in `pages/*.html`.
 - **New category:** add to `categories` in `articles.js` and create `pages/your-category.html`.
@@ -43,7 +43,7 @@ help-landing/
 ## Link from the app
 
 ```
-https://devn03215.github.io/awgp-help/
+https://devn03215.github.io/awgpapp-help/
 ```
 
 Update once when you move to a custom domain.

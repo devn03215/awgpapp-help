@@ -1,7 +1,7 @@
 GitHub Pages for the AWGP Help Center (public repo under devn03215).
 
 Live URL (after deploy):
-  https://devn03215.github.io/awgp-help/
+  https://devn03215.github.io/awgpapp-help/
 
 Same pattern as:
   https://devn03215.github.io/awgp-share/
@@ -11,7 +11,7 @@ Same pattern as:
 ## One-time setup
 
 1. Create a public repo: https://github.com/new
-   Name: awgp-help
+   Name: awgpapp-help
    Owner: devn03215
    Do not add README (we copy from awgp-mobile).
 
@@ -23,9 +23,9 @@ From awgp-mobile (source of truth):
 
 ```powershell
 # Copy site into the Pages repo
-Copy-Item c:\dev\git\awgp-mobile\help-landing\* c:\dev\git\awgp-help\ -Recurse -Force
+Copy-Item c:\dev\git\awgp-mobile\help-landing\* c:\dev\git\awgpapp-help\ -Recurse -Force
 
-cd c:\dev\git\awgp-help
+cd c:\dev\git\awgpapp-help
 git add -A
 $env:GIT_AUTHOR_NAME="devn03215"
 $env:GIT_AUTHOR_EMAIL="devn03215@gmail.com"
@@ -38,7 +38,7 @@ git push
 First-time clone after creating the empty repo:
 
 ```powershell
-git clone https://github.com/devn03215/awgp-help.git c:\dev\git\awgp-help
+git clone https://github.com/devn03215/awgpapp-help.git c:\dev\git\awgpapp-help
 # then copy and push as above
 ```
 
