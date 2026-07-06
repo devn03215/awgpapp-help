@@ -1,4 +1,4 @@
-/** Search index for the AWGP Help Center. */
+/** Search index for the AWGP App Help Center. */
 window.AWGP_HELP = {
   categories: [
     {
@@ -52,7 +52,7 @@ window.AWGP_HELP = {
   ],
   suggested: [
   {
-    title: 'Install AWGP on iOS or Android',
+    title: 'Install AWGP App on iOS or Android',
     href: 'pages/getting-started.html#install',
   },
   {
@@ -69,9 +69,9 @@ window.AWGP_HELP = {
   },
   ],
   articles: [
-    { title: 'Welcome to AWGP', category: 'Getting Started', href: 'pages/getting-started.html#welcome' },
+    { title: 'Welcome to AWGP App', category: 'Getting Started', href: 'pages/getting-started.html#welcome' },
     { title: 'Install on iOS & Android', category: 'Getting Started', href: 'pages/getting-started.html#install' },
-    { title: 'Sign in or continue as guest', category: 'Getting Started', href: 'pages/getting-started.html#account' },
+    { title: 'No account needed', category: 'Getting Started', href: 'pages/getting-started.html#account' },
     { title: 'Navigating the app', category: 'Getting Started', href: 'pages/getting-started.html#navigation' },
     { title: 'System requirements', category: 'Getting Started', href: 'pages/getting-started.html#requirements' },
     { title: 'Playing audio tracks', category: 'Audio & Mantras', href: 'pages/audio.html#play-tracks' },
@@ -92,16 +92,16 @@ window.AWGP_HELP = {
     { title: 'Daily Thought reminders', category: 'Daily Thought & Panchang', href: 'pages/daily-thought.html#reminders' },
     { title: 'Panchang on Home', category: 'Daily Thought & Panchang', href: 'pages/daily-thought.html#panchang' },
     { title: 'My location for Panchang', category: 'Daily Thought & Panchang', href: 'pages/daily-thought.html#location' },
-    { title: 'Your account', category: 'Account & Privacy', href: 'pages/account-privacy.html#account' },
+    { title: 'Using AWGP App today', category: 'Account & Privacy', href: 'pages/account-privacy.html#using-the-app' },
     { title: 'Privacy & your data', category: 'Account & Privacy', href: 'pages/account-privacy.html#privacy' },
     { title: 'Notification settings', category: 'Account & Privacy', href: 'pages/account-privacy.html#notifications' },
-    { title: 'Request data deletion', category: 'Account & Privacy', href: 'pages/account-privacy.html#deletion' },
+    { title: 'Clear local data', category: 'Account & Privacy', href: 'pages/account-privacy.html#local-data' },
     { title: 'Audio won\'t play', category: 'Troubleshooting', href: 'pages/troubleshooting.html#audio-wont-play' },
     { title: 'Downloads & storage', category: 'Troubleshooting', href: 'pages/troubleshooting.html#downloads' },
     { title: 'Notifications not arriving', category: 'Troubleshooting', href: 'pages/troubleshooting.html#notifications' },
-    { title: 'Sign-in issues', category: 'Troubleshooting', href: 'pages/troubleshooting.html#sign-in' },
+    { title: 'Account registration (not available yet)', category: 'Troubleshooting', href: 'pages/troubleshooting.html#sign-in' },
     { title: 'Send feedback or report a bug', category: 'Troubleshooting', href: 'pages/troubleshooting.html#feedback' },
-    { title: 'Is AWGP free?', category: 'FAQ', href: 'pages/faq.html#free' },
+    { title: 'Is AWGP App free?', category: 'FAQ', href: 'pages/faq.html#free' },
     { title: 'Relationship to awgp.org', category: 'FAQ', href: 'pages/faq.html#awgp-org' },
     { title: 'Languages & content', category: 'FAQ', href: 'pages/faq.html#languages' },
     { title: 'Apple Watch companion', category: 'FAQ', href: 'pages/faq.html#watch' },

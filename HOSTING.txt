@@ -1,4 +1,4 @@
-GitHub Pages for the AWGP Help Center (public repo under devn03215).
+GitHub Pages for the AWGP App Help Center (public repo under devn03215).
 
 Live URL (after deploy):
   https://devn03215.github.io/awgpapp-help/

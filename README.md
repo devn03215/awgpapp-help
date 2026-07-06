@@ -1,6 +1,6 @@
-# AWGP Help Center
+# AWGP App Help Center
 
-Static help site for the AWGP mobile app ([HelpKit](https://helpkit.so)-style UI).  
+Static help site for the AWGP App ([HelpKit](https://helpkit.so)-style UI).  
 **Source of truth:** `help-landing/` in [awgp-mobile](https://github.com/shiv213/awgp-mobile).
 
 ## Live site
