@@ -94,6 +94,7 @@ window.AWGP_HELP = {
     { title: 'My location for Panchang', category: 'Daily Thought & Panchang', href: 'pages/daily-thought.html#location' },
     { title: 'Using AWGP App today', category: 'Account & Privacy', href: 'pages/account-privacy.html#using-the-app' },
     { title: 'Privacy & your data', category: 'Account & Privacy', href: 'pages/account-privacy.html#privacy' },
+    { title: 'Anonymous crash reports', category: 'Account & Privacy', href: 'pages/account-privacy.html#crash-reports' },
     { title: 'Notification settings', category: 'Account & Privacy', href: 'pages/account-privacy.html#notifications' },
     { title: 'Clear local data', category: 'Account & Privacy', href: 'pages/account-privacy.html#local-data' },
     { title: 'Audio won\'t play', category: 'Troubleshooting', href: 'pages/troubleshooting.html#audio-wont-play' },
