@@ -28,7 +28,9 @@
   }
 
   function articlesLabel(count) {
-    return t('chrome.articlesCount', count + ' Articles').replace(/\{\{count\}\}/g, String(count));
+    return t('chrome.articlesCount', count + ' Articles')
+      .replace(/__COUNT__/g, String(count))
+      .replace(/\{\{count\}\}/g, String(count));
   }
 
   function renderCategoryGrid(container) {

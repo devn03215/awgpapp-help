@@ -18,7 +18,7 @@ window.AWGP_HELP_I18N.en = {
     helpCenter: 'Help Center',
     brandSub: 'Help Center',
     backToHelp: '← Back to Help Center',
-    articlesCount: '{{count}} Articles',
+    articlesCount: '__COUNT__ Articles',
     searchEmpty: 'No articles found. Try different keywords.',
     browseByTopic: 'Browse by topic',
     suggestedArticles: 'Suggested articles',

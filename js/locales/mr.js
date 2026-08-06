@@ -18,7 +18,7 @@ window.AWGP_HELP_I18N.mr = {
     helpCenter: 'मदत केंद्र',
     brandSub: 'मदत केंद्र',
     backToHelp: '← मदत केंद्राकडे परत',
-    articlesCount: '{{count}} लेख',
+    articlesCount: '__COUNT__ लेख',
     searchEmpty: 'कोणताही लेख सापडला नाही. वेगळे कीवर्ड वापरून पहा.',
     browseByTopic: 'विषयानुसार पहा',
     suggestedArticles: 'सुचवलेले लेख',

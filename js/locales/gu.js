@@ -18,7 +18,7 @@ window.AWGP_HELP_I18N.gu = {
     helpCenter: 'સહાય કેન્દ્ર',
     brandSub: 'સહાય કેન્દ્ર',
     backToHelp: '← સહાય કેન્દ્ર પર પાછા',
-    articlesCount: '{{count}} લેખો',
+    articlesCount: '__COUNT__ લેખો',
     searchEmpty: 'કોઈ લેખ મળ્યો નથી. અલગ કીવર્ડ અજમાવો.',
     browseByTopic: 'વિષય મુજબ જુઓ',
     suggestedArticles: 'સૂચવેલા લેખો',
