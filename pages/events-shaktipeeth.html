@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Events &amp; Shaktipeeths — AWGP App Help Center</title>
+  <title data-i18n="meta.eventsTitle">Events &amp; Shaktipeeths — AWGP App Help Center</title>
   <link rel="icon" href="../assets/icon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
@@ -15,123 +15,124 @@
         <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
     </header>
 
     <div class="page-header">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Help Center</a>
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
         <span>/</span>
-        <span>Events &amp; Shaktipeeths</span>
+        <span data-i18n="events.crumb">Events &amp; Shaktipeeths</span>
       </nav>
-      <h1><span aria-hidden="true">📍</span> Events &amp; Shaktipeeths</h1>
+      <h1><span aria-hidden="true">📍</span> <span data-i18n="events.heading">Events &amp; Shaktipeeths</span></h1>
     </div>
 
     <nav class="article-list" aria-label="Articles in this category">
-      <a href="#find-centers">Find Shaktipeeths &amp; centers</a>
-      <a href="#view-events">Browse &amp; open events</a>
-      <a href="#rsvp">Interested &amp; Going</a>
-      <a href="#share-event">Share an event</a>
-      <a href="#become-organizer">Become an organizer</a>
-      <a href="#create-event">Create an event</a>
-      <a href="#my-shaktipeeth">My Shaktipeeth</a>
-      <a href="#review">Approval &amp; publishing</a>
+      <a href="#find-centers" data-i18n="events.toc.findCenters">Find Shaktipeeths &amp; centers</a>
+      <a href="#view-events" data-i18n="events.toc.viewEvents">Browse &amp; open events</a>
+      <a href="#rsvp" data-i18n="events.toc.rsvp">Interested &amp; Going</a>
+      <a href="#share-event" data-i18n="events.toc.shareEvent">Share an event</a>
+      <a href="#become-organizer" data-i18n="events.toc.becomeOrganizer">Become an organizer</a>
+      <a href="#create-event" data-i18n="events.toc.createEvent">Create an event</a>
+      <a href="#my-shaktipeeth" data-i18n="events.toc.myShaktipeeth">My Shaktipeeth</a>
+      <a href="#review" data-i18n="events.toc.review">Approval &amp; publishing</a>
     </nav>
 
     <article class="article-body">
-      <h2 id="find-centers">Find Shaktipeeths &amp; centers</h2>
-      <p>
+      <h2 id="find-centers" data-i18n="events.findCenters.title">Find Shaktipeeths &amp; centers</h2>
+      <p data-i18n-html="events.findCenters.p1Html">
         Open the <strong>Shaktipeeths</strong> tab to explore AWGP centers near you or around the world.
         You can switch between list and map views (Android map needs a Google Maps key in your build;
         iOS uses Apple Maps).
       </p>
       <ul>
-        <li>Tap a center to open its detail page — overview, contact, and upcoming events.</li>
-        <li>From a center you follow or organize, you may also open <strong>My Shaktipeeth</strong> for a home-style view of that center’s events.</li>
+        <li data-i18n="events.findCenters.li1">Tap a center to open its detail page — overview, contact, and upcoming events.</li>
+        <li data-i18n-html="events.findCenters.li2Html">From a center you follow or organize, you may also open <strong>My Shaktipeeth</strong> for a home-style view of that center’s events.</li>
       </ul>
 
-      <h2 id="view-events">Browse &amp; open events</h2>
-      <p>
+      <h2 id="view-events" data-i18n="events.viewEvents.title">Browse &amp; open events</h2>
+      <p data-i18n-html="events.viewEvents.p1Html">
         Published events appear on the center page and in My Shaktipeeth under <strong>Events</strong>.
         Each card shows the title, date/time, venue, and price when available.
       </p>
-      <p>
+      <p data-i18n="events.viewEvents.p2">
         Tap an event for the full detail screen: flyer or cover, description, location, organizer contact,
         recurrence (one-time, weekly, or monthly), and response buttons.
       </p>
-      <div class="tip">
+      <div class="tip" data-i18n-html="events.viewEvents.tipHtml">
         Only <strong>published</strong> events are shown to everyone. New events stay hidden until an
         AWGP editor approves them (see <a href="#review">Approval &amp; publishing</a>).
       </div>
 
-      <h2 id="rsvp">Interested &amp; Going</h2>
-      <p>
+      <h2 id="rsvp" data-i18n="events.rsvp.title">Interested &amp; Going</h2>
+      <p data-i18n-html="events.rsvp.p1Html">
         On a published event, you can tap <strong>Interested</strong> or <strong>Going</strong>.
         The app shows public totals only (how many people marked each option).
       </p>
       <ul>
-        <li><strong>Privacy:</strong> your personal choice is stored on this device. We do not publish your name or require an account for these counts.</li>
-        <li>Totals update when you change your response; tapping the same option again clears it.</li>
-        <li>Clearing app data (Profile → clear local data) removes your saved responses on that device.</li>
+        <li data-i18n-html="events.rsvp.li1Html"><strong>Privacy:</strong> your personal choice is stored on this device. We do not publish your name or require an account for these counts.</li>
+        <li data-i18n="events.rsvp.li2">Totals update when you change your response; tapping the same option again clears it.</li>
+        <li data-i18n="events.rsvp.li3">Clearing app data (Profile → clear local data) removes your saved responses on that device.</li>
       </ul>
 
-      <h2 id="share-event">Share an event</h2>
-      <p>
+      <h2 id="share-event" data-i18n="events.shareEvent.title">Share an event</h2>
+      <p data-i18n-html="events.shareEvent.bodyHtml">
         Use the share icon on an event to send a link. Recipients open a web page first, then can
         tap <strong>Open in AWGP App</strong> if the app is installed.
       </p>
 
-      <h2 id="become-organizer">Become an organizer</h2>
-      <p>
+      <h2 id="become-organizer" data-i18n="events.becomeOrganizer.title">Become an organizer</h2>
+      <p data-i18n-html="events.becomeOrganizer.p1Html">
         Hosting events for a center is <strong>invite-only after review</strong>. Anyone can apply from
         a center’s page with <strong>Become organizer</strong> (name and email required; phone and a short
         message are optional).
       </p>
       <ol>
-        <li>Open the center → <strong>Become organizer</strong>.</li>
-        <li>Submit your application. You will see a pending status until it is reviewed.</li>
-        <li>If approved, you receive an email invite to set up hosting access for that center.</li>
-        <li>After you accept the invite and sign in, you can create events for that Shaktipeeth.</li>
+        <li data-i18n-html="events.becomeOrganizer.li1Html">Open the center → <strong>Become organizer</strong>.</li>
+        <li data-i18n="events.becomeOrganizer.li2">Submit your application. You will see a pending status until it is reviewed.</li>
+        <li data-i18n="events.becomeOrganizer.li3">If approved, you receive an email invite to set up hosting access for that center.</li>
+        <li data-i18n="events.becomeOrganizer.li4">After you accept the invite and sign in, you can create events for that Shaktipeeth.</li>
       </ol>
-      <div class="tip">
+      <div class="tip" data-i18n="events.becomeOrganizer.tip">
         Public self-serve “sign up to host” is closed. Applying does not grant hosting until an editor
         approves you and sends an invite.
       </div>
 
-      <h2 id="create-event">Create an event</h2>
-      <p>
+      <h2 id="create-event" data-i18n="events.createEvent.title">Create an event</h2>
+      <p data-i18n-html="events.createEvent.p1Html">
         Organizers (and center editors) see <strong>Create event</strong> on the center or My Shaktipeeth screen.
       </p>
       <ul>
-        <li>Enter a title (required), description, start time, optional end time, recurrence, and contact info.</li>
-        <li>Use start time format <strong>YYYY-MM-DD HH:MM</strong> (24-hour).</li>
-        <li>Submit the event — it is saved as <strong>pending</strong> and is not public yet.</li>
+        <li data-i18n="events.createEvent.li1">Enter a title (required), description, start time, optional end time, recurrence, and contact info.</li>
+        <li data-i18n-html="events.createEvent.li2Html">Use start time format <strong>YYYY-MM-DD HH:MM</strong> (24-hour).</li>
+        <li data-i18n-html="events.createEvent.li3Html">Submit the event — it is saved as <strong>pending</strong> and is not public yet.</li>
       </ul>
-      <p>
+      <p data-i18n="events.createEvent.p2">
         You may see a pending badge on the event until an AWGP editor publishes it. After publishing,
         it appears in upcoming lists for all visitors.
       </p>
 
-      <h2 id="my-shaktipeeth">My Shaktipeeth</h2>
-      <p>
+      <h2 id="my-shaktipeeth" data-i18n="events.myShaktipeeth.title">My Shaktipeeth</h2>
+      <p data-i18n-html="events.myShaktipeeth.p1Html">
         <strong>My Shaktipeeth</strong> is a focused home for a center you organize or follow closely.
         Use the segments:
       </p>
       <ul>
-        <li><strong>Events</strong> — upcoming list and create/share actions when you have hosting access.</li>
-        <li><strong>Center</strong> — center details (placeholder sections may expand over time).</li>
-        <li><strong>News</strong> — reserved for future center updates.</li>
+        <li data-i18n-html="events.myShaktipeeth.liEventsHtml"><strong>Events</strong> — upcoming list and create/share actions when you have hosting access.</li>
+        <li data-i18n-html="events.myShaktipeeth.liCenterHtml"><strong>Center</strong> — center details (placeholder sections may expand over time).</li>
+        <li data-i18n-html="events.myShaktipeeth.liNewsHtml"><strong>News</strong> — reserved for future center updates.</li>
       </ul>
 
-      <h2 id="review">Approval &amp; publishing</h2>
-      <p>Two separate reviews keep quality and safety high:</p>
+      <h2 id="review" data-i18n="events.review.title">Approval &amp; publishing</h2>
+      <p data-i18n="events.review.p1">Two separate reviews keep quality and safety high:</p>
       <ul>
-        <li><strong>Organizer applications</strong> — reviewed by AWGP; approved applicants get an invite email.</li>
-        <li><strong>Events</strong> — reviewed after you create them; only published events are listed publicly.</li>
+        <li data-i18n-html="events.review.liOrgHtml"><strong>Organizer applications</strong> — reviewed by AWGP; approved applicants get an invite email.</li>
+        <li data-i18n-html="events.review.liEventsHtml"><strong>Events</strong> — reviewed after you create them; only published events are listed publicly.</li>
       </ul>
-      <p>
+      <p data-i18n-html="events.review.p2Html">
         If your application or event seems stuck on pending, wait for email from the AWGP team, or
         contact support from the app (<strong>Profile → Feedback</strong>) or the
         <a href="../contact.html">Help Center contact page</a>.
@@ -139,8 +140,14 @@
     </article>
 
     <footer class="site-footer">
-      <p><a href="../index.html">← Back to Help Center</a></p>
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
     </footer>
   </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

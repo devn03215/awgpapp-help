@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="AWGP App Help Center — guides for audio, rituals, library, Shaktipeeth events, daily thought, and troubleshooting." />
-  <title>AWGP App Help Center</title>
+  <title data-i18n="meta.helpTitle">AWGP App Help Center</title>
   <link rel="icon" href="assets/icon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,14 +18,17 @@
         <img src="assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
-      <a class="header-link" href="https://www.awgp.org" rel="noopener">awgp.org</a>
+      <div class="header-tools">
+        <a class="header-link" href="https://www.awgp.org" rel="noopener">awgp.org</a>
+        <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
+      </div>
     </header>
 
     <section class="hero">
-      <h1>How can we help? 👋</h1>
+      <h1 data-i18n="hub.hero">How can we help? 👋</h1>
       <div class="search-wrap">
         <span class="search-icon" aria-hidden="true">⌕</span>
         <input
@@ -33,6 +36,8 @@
           class="search-input"
           type="search"
           placeholder="Search for articles…"
+          data-i18n-placeholder="hub.searchPlaceholder"
+          data-i18n-aria="hub.searchAria"
           autocomplete="off"
           aria-label="Search help articles"
         />
@@ -40,27 +45,32 @@
       </div>
     </section>
 
-    <p class="section-label">Browse by topic</p>
+    <p class="section-label" data-i18n="chrome.browseByTopic">Browse by topic</p>
     <div id="category-grid" class="category-grid"></div>
 
-    <p class="section-label">Suggested articles</p>
+    <p class="section-label" data-i18n="chrome.suggestedArticles">Suggested articles</p>
     <div id="suggested-list" class="suggested-list"></div>
 
     <section class="contact-card">
-      <h2>Contact us</h2>
-      <p>Can’t find what you need? Reach out and we’ll get back to you.</p>
-      <a class="btn" href="contact.html">Contact support</a>
+      <h2 data-i18n="chrome.contactUs">Contact us</h2>
+      <p data-i18n="chrome.contactBlurb">Can’t find what you need? Reach out and we’ll get back to you.</p>
+      <a class="btn" href="contact.html" data-i18n="chrome.contactSupport">Contact support</a>
     </section>
 
     <footer class="site-footer">
       <p>
-        © All World Gayatri Pariwar ·
+        <span data-i18n="chrome.footerLine">© All World Gayatri Pariwar ·</span>
         <a href="https://www.awgp.org" rel="noopener">awgp.org</a> ·
-        <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy</a>
+        <a href="https://devn03215.github.io/privacy-policy/" rel="noopener" data-i18n="chrome.footerPrivacy">Privacy</a>
       </p>
     </footer>
   </div>
 
+  <script src="js/locales/en.js"></script>
+  <script src="js/locales/hi.js"></script>
+  <script src="js/locales/gu.js"></script>
+  <script src="js/locales/mr.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/articles.js"></script>
   <script src="js/site.js"></script>
 </body>

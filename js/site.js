@@ -4,13 +4,16 @@
 
   const root = document.documentElement;
   const basePath = root.getAttribute('data-base') || '';
+  const t = window.AWGP_HELP_t || function (key, fb) { return fb != null ? fb : key; };
+  const withLang = window.AWGP_HELP_withLang || function (href) { return href; };
 
   function resolveHref(href) {
     if (!href || href.startsWith('http') || href.startsWith('mailto:')) return href;
+    var resolved = href;
     if (basePath && !href.startsWith(basePath)) {
-      return basePath.replace(/\/?$/, '/') + href.replace(/^\//, '');
+      resolved = basePath.replace(/\/?$/, '/') + href.replace(/^\//, '');
     }
-    return href;
+    return withLang(resolved, window.AWGP_HELP_LANG || 'en');
   }
 
   function normalize(s) {
@@ -20,12 +23,20 @@
       .replace(/[\u0300-\u036f]/g, '');
   }
 
+  function categoryTitle(id) {
+    return t('categories.' + id, id);
+  }
+
+  function articlesLabel(count) {
+    return t('chrome.articlesCount', count + ' Articles').replace(/\{\{count\}\}/g, String(count));
+  }
+
   function renderCategoryGrid(container) {
     if (!container) return;
     container.innerHTML = data.categories
       .map(function (cat) {
         const count = data.articles.filter(function (a) {
-          return a.category === cat.title;
+          return a.categoryId === cat.id;
         }).length;
         return (
           '<a class="category-card" href="' +
@@ -35,11 +46,11 @@
           cat.emoji +
           '</span>' +
           '<span class="category-title">' +
-          cat.title +
+          categoryTitle(cat.id) +
           '</span>' +
           '<span class="category-count">' +
-          count +
-          ' Articles</span>' +
+          articlesLabel(count) +
+          '</span>' +
           '</a>'
         );
       })
@@ -54,7 +65,7 @@
           '<a class="suggested-item" href="' +
           resolveHref(item.href) +
           '">' +
-          item.title +
+          t('suggested.' + item.id, item.id) +
           '</a>'
         );
       })
@@ -85,13 +96,19 @@
 
       const matches = data.articles
         .filter(function (article) {
-          const hay = normalize(article.title + ' ' + article.category);
+          const title = t('articles.' + article.id, article.id);
+          const category = categoryTitle(article.categoryId);
+          const hay = normalize(title + ' ' + category);
           return hay.indexOf(q) !== -1;
         })
         .slice(0, 8);
 
       if (!matches.length) {
-        openResults('<div class="search-empty">No articles found. Try different keywords.</div>');
+        openResults(
+          '<div class="search-empty">' +
+            t('chrome.searchEmpty', 'No articles found. Try different keywords.') +
+            '</div>'
+        );
         return;
       }
 
@@ -103,10 +120,10 @@
               resolveHref(article.href) +
               '">' +
               '<div class="search-result-title">' +
-              article.title +
+              t('articles.' + article.id, article.id) +
               '</div>' +
               '<div class="search-result-meta">' +
-              article.category +
+              categoryTitle(article.categoryId) +
               '</div>' +
               '</a>'
             );
@@ -126,7 +143,17 @@
     });
   }
 
-  renderCategoryGrid(document.getElementById('category-grid'));
-  renderSuggested(document.getElementById('suggested-list'));
-  setupSearch();
+  function bootHub() {
+    renderCategoryGrid(document.getElementById('category-grid'));
+    renderSuggested(document.getElementById('suggested-list'));
+    setupSearch();
+  }
+
+  if (document.getElementById('category-grid') || document.getElementById('suggested-list')) {
+    if (window.AWGP_HELP_t) {
+      bootHub();
+    } else {
+      document.addEventListener('awgp-help-i18n-ready', bootHub);
+    }
+  }
 })();

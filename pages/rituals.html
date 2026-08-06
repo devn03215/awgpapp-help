@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rituals & Yagya — AWGP App Help Center</title>
+  <title data-i18n="meta.ritualsTitle">Rituals & Yagya — AWGP App Help Center</title>
   <link rel="icon" href="../assets/icon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
@@ -15,64 +15,71 @@
         <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
     </header>
 
     <div class="page-header">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Help Center</a>
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
         <span>/</span>
-        <span>Rituals &amp; Yagya</span>
+        <span data-i18n="rituals.crumb">Rituals &amp; Yagya</span>
       </nav>
-      <h1><span aria-hidden="true">🔥</span> Rituals &amp; Yagya</h1>
+      <h1><span aria-hidden="true">🔥</span> <span data-i18n="rituals.heading">Rituals &amp; Yagya</span></h1>
     </div>
 
     <nav class="article-list" aria-label="Articles in this category">
-      <a href="#overview">Rituals overview</a>
-      <a href="#japa">Gayatri Japa counter</a>
-      <a href="#yagya">Yagya practices</a>
-      <a href="#continue">Continue where you left off</a>
+      <a href="#overview" data-i18n="rituals.toc.overview">Rituals overview</a>
+      <a href="#japa" data-i18n="rituals.toc.japa">Gayatri Japa counter</a>
+      <a href="#yagya" data-i18n="rituals.toc.yagya">Yagya practices</a>
+      <a href="#continue" data-i18n="rituals.toc.continue">Continue where you left off</a>
     </nav>
 
     <article class="article-body">
-      <h2 id="overview">Rituals overview</h2>
-      <p>
+      <h2 id="overview" data-i18n="rituals.overview.title">Rituals overview</h2>
+      <p data-i18n-html="rituals.overview.bodyHtml">
         The <strong>Rituals</strong> tab guides you through daily spiritual practice — from Gayatri
         Japa to structured Yagya sessions. Each ritual opens step-by-step with audio cues where
         applicable.
       </p>
 
-      <h2 id="japa">Gayatri Japa counter</h2>
-      <p>
+      <h2 id="japa" data-i18n="rituals.japa.title">Gayatri Japa counter</h2>
+      <p data-i18n-html="rituals.japa.bodyHtml">
         Gayatri Japa helps you count repetitions with a calm, focused interface. Progress can
         appear on Home under <strong>Continue</strong> so you can resume your session.
       </p>
-      <div class="tip">
+      <div class="tip" data-i18n="rituals.japa.tip">
         Use headphones or speaker at a comfortable volume. The counter works offline once the
         screen is loaded.
       </div>
 
-      <h2 id="yagya">Yagya practices</h2>
-      <p>AWGP offers several Yagya formats:</p>
+      <h2 id="yagya" data-i18n="rituals.yagya.title">Yagya practices</h2>
+      <p data-i18n="rituals.yagya.p1">AWGP offers several Yagya formats:</p>
       <ul>
-        <li><strong>Quick / abridged</strong> — shorter daily practice.</li>
-        <li><strong>Full Yagya</strong> — complete guided flow.</li>
-        <li><strong>Custom Yagya</strong> — build or open saved configurations.</li>
+        <li data-i18n-html="rituals.yagya.liQuickHtml"><strong>Quick / abridged</strong> — shorter daily practice.</li>
+        <li data-i18n-html="rituals.yagya.liFullHtml"><strong>Full Yagya</strong> — complete guided flow.</li>
+        <li data-i18n-html="rituals.yagya.liCustomHtml"><strong>Custom Yagya</strong> — build or open saved configurations.</li>
       </ul>
-      <p>Choose the version that fits your schedule; you can always switch from the Rituals menu.</p>
+      <p data-i18n="rituals.yagya.p2">Choose the version that fits your schedule; you can always switch from the Rituals menu.</p>
 
-      <h2 id="continue">Continue where you left off</h2>
-      <p>
+      <h2 id="continue" data-i18n="rituals.continue.title">Continue where you left off</h2>
+      <p data-i18n-html="rituals.continue.bodyHtml">
         Home shows a <strong>Continue</strong> carousel when you have in-progress rituals, books,
         or audio. Swipe to dismiss an item you no longer need.
       </p>
     </article>
 
     <footer class="site-footer">
-      <p><a href="../index.html">← Back to Help Center</a></p>
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
     </footer>
   </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

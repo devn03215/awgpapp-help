@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily Thought & Panchang — AWGP App Help Center</title>
+  <title data-i18n="meta.dailyThoughtTitle">Daily Thought & Panchang — AWGP App Help Center</title>
   <link rel="icon" href="../assets/icon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
@@ -15,68 +15,75 @@
         <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
     </header>
 
     <div class="page-header">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Help Center</a>
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
         <span>/</span>
-        <span>Daily Thought &amp; Panchang</span>
+        <span data-i18n="dailyThought.crumb">Daily Thought &amp; Panchang</span>
       </nav>
-      <h1><span aria-hidden="true">☀️</span> Daily Thought &amp; Panchang</h1>
+      <h1><span aria-hidden="true">☀️</span> <span data-i18n="dailyThought.heading">Daily Thought &amp; Panchang</span></h1>
     </div>
 
     <nav class="article-list" aria-label="Articles in this category">
-      <a href="#daily-thought">Daily Thought</a>
-      <a href="#reminders">Daily Thought reminders</a>
-      <a href="#panchang">Panchang on Home</a>
-      <a href="#location">My location for Panchang</a>
+      <a href="#daily-thought" data-i18n="dailyThought.toc.dailyThought">Daily Thought</a>
+      <a href="#reminders" data-i18n="dailyThought.toc.reminders">Daily Thought reminders</a>
+      <a href="#panchang" data-i18n="dailyThought.toc.panchang">Panchang on Home</a>
+      <a href="#location" data-i18n="dailyThought.toc.location">My location for Panchang</a>
     </nav>
 
     <article class="article-body">
-      <h2 id="daily-thought">Daily Thought</h2>
-      <p>
+      <h2 id="daily-thought" data-i18n="dailyThought.dailyThought.title">Daily Thought</h2>
+      <p data-i18n="dailyThought.dailyThought.p1">
         Each day AWGP surfaces a thought from Gurudev’s teachings (and optional custom thoughts you
         add). Open it from Home or the dedicated Daily Thought screen. Share as an image card via
         the share sheet.
       </p>
-      <p>
+      <p data-i18n-html="dailyThought.dailyThought.p2Html">
         Filter categories and topics under <strong>Profile → Daily Thought settings</strong> to
         personalize what appears in your rotation.
       </p>
 
-      <h2 id="reminders">Daily Thought reminders</h2>
-      <p>Enable a daily notification from Profile:</p>
+      <h2 id="reminders" data-i18n="dailyThought.reminders.title">Daily Thought reminders</h2>
+      <p data-i18n="dailyThought.reminders.p1">Enable a daily notification from Profile:</p>
       <ol>
-        <li>Open <strong>Profile → Notifications</strong> (or Daily Thought settings).</li>
-        <li>Turn on <strong>Daily Thought reminder</strong>.</li>
-        <li>Pick time and repeat days.</li>
-        <li>Allow notifications when iOS or Android prompts you.</li>
+        <li data-i18n-html="dailyThought.reminders.li1Html">Open <strong>Profile → Notifications</strong> (or Daily Thought settings).</li>
+        <li data-i18n-html="dailyThought.reminders.li2Html">Turn on <strong>Daily Thought reminder</strong>.</li>
+        <li data-i18n="dailyThought.reminders.li3">Pick time and repeat days.</li>
+        <li data-i18n="dailyThought.reminders.li4">Allow notifications when iOS or Android prompts you.</li>
       </ol>
-      <div class="tip">
+      <div class="tip" data-i18n="dailyThought.reminders.tip">
         If reminders stop after an OS update, open AWGP once and confirm notification permission
         is still enabled in system Settings.
       </div>
 
-      <h2 id="panchang">Panchang on Home</h2>
-      <p>
+      <h2 id="panchang" data-i18n="dailyThought.panchang.title">Panchang on Home</h2>
+      <p data-i18n="dailyThought.panchang.body">
         Home shows a Panchang teaser with tithi, nakshatra, and key timings for your location.
         Tap through for the full Panchang screen and deeper calendar details.
       </p>
 
-      <h2 id="location">My location for Panchang</h2>
-      <p>
+      <h2 id="location" data-i18n="dailyThought.location.title">My location for Panchang</h2>
+      <p data-i18n-html="dailyThought.location.bodyHtml">
         Accurate Panchang depends on your location. Set it under <strong>Profile → My location</strong>
         or when prompted from Home. You can search for a city or use GPS where available.
       </p>
     </article>
 
     <footer class="site-footer">
-      <p><a href="../index.html">← Back to Help Center</a></p>
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
     </footer>
   </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — AWGP App Help Center</title>
+  <title data-i18n="meta.contactTitle">Contact — AWGP App Help Center</title>
   <link rel="icon" href="assets/icon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
@@ -15,62 +15,69 @@
         <img src="assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
     </header>
 
     <div class="page-header">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Help Center</a>
+        <a href="index.html" data-i18n="chrome.helpCenter">Help Center</a>
         <span>/</span>
-        <span>Contact</span>
+        <span data-i18n="contact.crumb">Contact</span>
       </nav>
-      <h1>Contact us</h1>
+      <h1 data-i18n="contact.heading">Contact us</h1>
     </div>
 
     <div class="article-body">
-      <p>
+      <p data-i18n="contact.intro">
         We’re here to help with AWGP App — audio playback, rituals, library content,
         account questions, and technical issues.
       </p>
 
-      <h2>Email</h2>
+      <h2 data-i18n="contact.emailHeading">Email</h2>
       <p>
-        <strong>General support:</strong>
+        <strong data-i18n="contact.emailGeneral">General support:</strong>
         <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a><br />
-        <strong>Privacy &amp; data requests:</strong>
-        <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a>
+        <span data-i18n-html="contact.emailPrivacyHtml">Privacy &amp; data requests:
+        <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a></span>
       </p>
 
-      <h2>Website</h2>
-      <p>
+      <h2 data-i18n="contact.websiteHeading">Website</h2>
+      <p data-i18n-html="contact.websiteBodyHtml">
         For teachings, publications, and organizational information, visit
         <a href="https://www.awgp.org" rel="noopener">awgp.org</a>.
       </p>
 
-      <h2>Feedback from the app</h2>
-      <p>
+      <h2 data-i18n="contact.feedbackHeading">Feedback from the app</h2>
+      <p data-i18n-html="contact.feedbackBodyHtml">
         Open <strong>Profile → Send feedback</strong> in the app to include your device and app
         version automatically. Screenshots and steps to reproduce are always helpful.
       </p>
 
-      <h2>Response time</h2>
-      <p>
+      <h2 data-i18n="contact.responseHeading">Response time</h2>
+      <p data-i18n="contact.responseBody">
         We aim to reply within a few business days. For urgent playback or sign-in issues, include
         your platform (iOS/Android), app version, and what you were trying to do.
       </p>
 
       <p style="margin-top: 2rem;">
-        <a class="btn" href="mailto:devn03215@gmail.com">Email support</a>
+        <a class="btn" href="mailto:devn03215@gmail.com" data-i18n="contact.emailSupport">Email support</a>
         &nbsp;
-        <a class="btn btn-secondary" href="index.html">Back to Help Center</a>
+        <a class="btn btn-secondary" href="index.html" data-i18n="contact.backBtn">Back to Help Center</a>
       </p>
     </div>
 
     <footer class="site-footer">
-      <p>© All World Gayatri Pariwar</p>
+      <p data-i18n="chrome.footerLine">© All World Gayatri Pariwar</p>
     </footer>
   </div>
+
+  <script src="js/locales/en.js"></script>
+  <script src="js/locales/hi.js"></script>
+  <script src="js/locales/gu.js"></script>
+  <script src="js/locales/mr.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

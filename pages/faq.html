@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FAQ — AWGP App Help Center</title>
+  <title data-i18n="meta.faqTitle">FAQ — AWGP App Help Center</title>
   <link rel="icon" href="../assets/icon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
@@ -15,54 +15,55 @@
         <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
     </header>
 
     <div class="page-header">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Help Center</a>
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
         <span>/</span>
-        <span>FAQ</span>
+        <span data-i18n="faq.crumb">FAQ</span>
       </nav>
-      <h1><span aria-hidden="true">⭐</span> FAQ</h1>
+      <h1><span aria-hidden="true">⭐</span> <span data-i18n="faq.heading">FAQ</span></h1>
     </div>
 
     <nav class="article-list" aria-label="Articles in this category">
-      <a href="#free">Is AWGP App free?</a>
-      <a href="#awgp-org">Relationship to awgp.org</a>
-      <a href="#languages">Languages &amp; content</a>
-      <a href="#host-events">Can anyone host events?</a>
-      <a href="#watch">Apple Watch companion</a>
-      <a href="#platforms">Android vs iOS features</a>
-      <a href="#updates">How to update the app</a>
+      <a href="#free" data-i18n="faq.toc.free">Is AWGP App free?</a>
+      <a href="#awgp-org" data-i18n="faq.toc.awgpOrg">Relationship to awgp.org</a>
+      <a href="#languages" data-i18n="faq.toc.languages">Languages &amp; content</a>
+      <a href="#host-events" data-i18n="faq.toc.hostEvents">Can anyone host events?</a>
+      <a href="#watch" data-i18n="faq.toc.watch">Apple Watch companion</a>
+      <a href="#platforms" data-i18n="faq.toc.platforms">Android vs iOS features</a>
+      <a href="#updates" data-i18n="faq.toc.updates">How to update the app</a>
     </nav>
 
     <article class="article-body">
-      <h2 id="free">Is AWGP App free?</h2>
-      <p>
+      <h2 id="free" data-i18n="faq.free.title">Is AWGP App free?</h2>
+      <p data-i18n="faq.free.body">
         AWGP App is free to download and use. Content is provided by All World Gayatri Pariwar for
         sadhana and study. Store listings and future offerings may change; check the app stores
         for current details.
       </p>
 
-      <h2 id="awgp-org">Relationship to awgp.org</h2>
-      <p>
+      <h2 id="awgp-org" data-i18n="faq.awgpOrg.title">Relationship to awgp.org</h2>
+      <p data-i18n-html="faq.awgpOrg.bodyHtml">
         AWGP App is a companion to <a href="https://www.awgp.org" rel="noopener">awgp.org</a>.
         Books, audio, and magazines align with AWGP publications. The website remains the source
         for organizational news and deeper web resources.
       </p>
 
-      <h2 id="languages">Languages &amp; content</h2>
-      <p>
+      <h2 id="languages" data-i18n="faq.languages.title">Languages &amp; content</h2>
+      <p data-i18n="faq.languages.body">
         The library includes multiple languages (for example Hindi, Gujarati, and English titles
         where available). Audio and rituals may vary by language — browse each section for what is
         published today. New content is added over time without requiring a separate app install.
       </p>
 
-      <h2 id="host-events">Can anyone host events?</h2>
-      <p>
+      <h2 id="host-events" data-i18n="faq.hostEvents.title">Can anyone host events?</h2>
+      <p data-i18n-html="faq.hostEvents.bodyHtml">
         Anyone can browse published events and mark <strong>Interested</strong> or <strong>Going</strong>.
         Creating events for a Shaktipeeth requires organizer access: apply from the center page, wait
         for AWGP review, then accept an invite email. New events stay pending until an editor publishes
@@ -71,22 +72,22 @@
         <a href="events-shaktipeeth.html#create-event">Create an event</a>.
       </p>
 
-      <h2 id="watch">Apple Watch companion</h2>
-      <p>
+      <h2 id="watch" data-i18n="faq.watch.title">Apple Watch companion</h2>
+      <p data-i18n="faq.watch.body">
         A minimal Apple Watch app (Now Playing and Daily Thought) is rolling out on supported iOS
         builds. It requires a recent iPhone build and Apple Watch paired to the same Apple ID.
         Android does not have a watch companion.
       </p>
 
-      <h2 id="platforms">Android vs iOS features</h2>
-      <p>
+      <h2 id="platforms" data-i18n="faq.platforms.title">Android vs iOS features</h2>
+      <p data-i18n="faq.platforms.body">
         Both platforms support core audio, rituals, and library features. iOS additionally offers
         CarPlay and Apple Watch in supported builds. UI follows platform conventions (edge-to-edge
         on Android, safe areas on iOS).
       </p>
 
-      <h2 id="updates">How to update the app</h2>
-      <p>
+      <h2 id="updates" data-i18n="faq.updates.title">How to update the app</h2>
+      <p data-i18n-html="faq.updates.bodyHtml">
         Updates ship through the App Store and Google Play. Enable automatic updates or search
         “AWGP App” in your store and tap <strong>Update</strong>. Note your version under
         <strong>Profile</strong> when reporting issues.
@@ -94,8 +95,14 @@
     </article>
 
     <footer class="site-footer">
-      <p><a href="../index.html">← Back to Help Center</a></p>
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
     </footer>
   </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

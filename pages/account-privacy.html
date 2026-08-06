@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Account & Privacy — AWGP App Help Center</title>
+  <title data-i18n="meta.accountTitle">Account & Privacy — AWGP App Help Center</title>
   <link rel="icon" href="../assets/icon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
@@ -15,108 +15,115 @@
         <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
         <span class="brand-text">
           <span class="brand-name">AWGP App</span>
-          <span class="brand-sub">Help Center</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
         </span>
       </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
     </header>
 
     <div class="page-header">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Help Center</a>
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
         <span>/</span>
-        <span>Account &amp; Privacy</span>
+        <span data-i18n="account.crumb">Account &amp; Privacy</span>
       </nav>
-      <h1><span aria-hidden="true">🔐</span> Account &amp; Privacy</h1>
+      <h1><span aria-hidden="true">🔐</span> <span data-i18n="account.heading">Account &amp; Privacy</span></h1>
     </div>
 
     <nav class="article-list" aria-label="Articles in this category">
-      <a href="#using-the-app">Using AWGP App today</a>
-      <a href="#privacy">Privacy &amp; your data</a>
-      <a href="#crash-reports">Anonymous crash reports</a>
-      <a href="#notifications">Notification settings</a>
-      <a href="#local-data">Clear local data</a>
+      <a href="#using-the-app" data-i18n="account.toc.usingApp">Using AWGP App today</a>
+      <a href="#privacy" data-i18n="account.toc.privacy">Privacy &amp; your data</a>
+      <a href="#crash-reports" data-i18n="account.toc.crashReports">Anonymous crash reports</a>
+      <a href="#notifications" data-i18n="account.toc.notifications">Notification settings</a>
+      <a href="#local-data" data-i18n="account.toc.localData">Clear local data</a>
     </nav>
 
     <article class="article-body">
-      <h2 id="using-the-app">Using AWGP App today</h2>
-      <p>
+      <h2 id="using-the-app" data-i18n="account.usingApp.title">Using AWGP App today</h2>
+      <p data-i18n="account.usingApp.p1">
         AWGP App does not offer user registration or sign-in yet. Onboarding and account creation are
         still in development and are not available in the current app release.
       </p>
-      <p>
+      <p data-i18n-html="account.usingApp.p2Html">
         You can use the full app without an account. Reading progress, playlists, downloads,
         reminders, and preferences are stored <strong>on your device</strong> unless we say
         otherwise in a future update.
       </p>
-      <p>
+      <p data-i18n-html="account.usingApp.p3Html">
         Manage appearance (light/dark/system), notifications, storage, and other options from
         the <strong>Profile</strong> tab. When accounts launch in a later version, we will update
         this help center with sign-up and sign-in instructions.
       </p>
 
-      <h2 id="privacy">Privacy &amp; your data</h2>
-      <p>
+      <h2 id="privacy" data-i18n="account.privacy.title">Privacy &amp; your data</h2>
+      <p data-i18n="account.privacy.p1">
         Today, AWGP App mainly keeps data on your phone or tablet — for example reading position,
         downloaded files, ritual progress, and reminder settings. If you send feedback through
         the app, we receive what you write plus basic device and app version details to help us
         fix issues.
       </p>
-      <p>
+      <p data-i18n-html="account.privacy.p2Html">
         We do not sell your personal information. Read the full policy:
         <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a>
         (also available from <strong>Profile → Your data</strong> when shown in the app).
       </p>
 
-      <h2 id="crash-reports">Anonymous crash reports</h2>
-      <p>
+      <h2 id="crash-reports" data-i18n="account.crashReports.title">Anonymous crash reports</h2>
+      <p data-i18n-html="account.crashReports.p1Html">
         Under <strong>Profile → Application → Anonymous crash reports</strong> you can optionally
         allow AWGP to receive a short technical report when the app crashes. This setting is
         <strong>off by default</strong>.
       </p>
-      <p>When enabled, a report may include:</p>
+      <p data-i18n="account.crashReports.p2">When enabled, a report may include:</p>
       <ul>
-        <li>Error message and a scrubbed stack trace</li>
-        <li>App version and build number</li>
-        <li>Device OS name and version</li>
+        <li data-i18n="account.crashReports.li1">Error message and a scrubbed stack trace</li>
+        <li data-i18n="account.crashReports.li2">App version and build number</li>
+        <li data-i18n="account.crashReports.li3">Device OS name and version</li>
       </ul>
-      <p>
+      <p data-i18n-html="account.crashReports.p3Html">
         It does <strong>not</strong> include your books, reading progress, playlists, downloads,
         account content, or other personal library data. Emails, tokens, and URL query strings are
         removed before anything is stored or sent.
       </p>
-      <p>
+      <p data-i18n="account.crashReports.p4">
         Reports are stored on device first and only uploaded if you turn the setting on. You can
         turn it off again anytime from the same Profile toggle.
       </p>
 
-      <h2 id="notifications">Notification settings</h2>
-      <p>Control reminders from Profile:</p>
+      <h2 id="notifications" data-i18n="account.notifications.title">Notification settings</h2>
+      <p data-i18n="account.notifications.p1">Control reminders from Profile:</p>
       <ul>
-        <li>Daily Thought</li>
-        <li>Book and magazine reading reminders</li>
-        <li>System permission must be allowed for any alert to appear</li>
+        <li data-i18n="account.notifications.li1">Daily Thought</li>
+        <li data-i18n="account.notifications.li2">Book and magazine reading reminders</li>
+        <li data-i18n="account.notifications.li3">System permission must be allowed for any alert to appear</li>
       </ul>
-      <p>These settings are stored locally on your device.</p>
+      <p data-i18n="account.notifications.p2">These settings are stored locally on your device.</p>
 
-      <h2 id="local-data">Clear local data</h2>
-      <p>
+      <h2 id="local-data" data-i18n="account.localData.title">Clear local data</h2>
+      <p data-i18n-html="account.localData.p1Html">
         To free space or remove downloads, open <strong>Profile → Manage Storage</strong> and
         delete items you no longer need. Uninstalling AWGP App removes app data from your device.
       </p>
-      <p>
+      <p data-i18n-html="account.localData.p2Html">
         If you previously sent feedback that included personal information and want it removed,
         email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> with enough detail for
         us to find your message.
       </p>
-      <div class="tip">
+      <div class="tip" data-i18n="account.localData.tip">
         Account-based data deletion will apply once user registration is available. Until then,
         clearing local storage or uninstalling the app is how to remove on-device data.
       </div>
     </article>
 
     <footer class="site-footer">
-      <p><a href="../index.html">← Back to Help Center</a></p>
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
     </footer>
   </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

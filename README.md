@@ -19,6 +19,15 @@ See [HOSTING.txt](./HOSTING.txt) for deploy steps.
 cd help-landing && npx serve .
 ```
 
+Open with a language: `http://localhost:3000/?lang=hi` (also `gu`, `mr`; English is default).
+
+## Localization
+
+- App Profile opens Help / FAQ with `?lang=` matching the in-app UI language (`en` / `hi` / `gu` / `mr`).
+- Strings live in `js/locales/{en,hi,gu,mr}.js`. HTML uses `data-i18n` / `data-i18n-html` / `data-i18n-placeholder`.
+- `js/i18n.js` reads `?lang=`, keeps it in `sessionStorage`, rewrites internal links, and shows a language switcher.
+- Until you copy this folder to `awgpapp-help` and push (see HOSTING.txt), production Pages will not show new translations even though the app already appends `?lang=`.
+
 ## Structure
 
 ```
@@ -27,23 +36,27 @@ help-landing/
   contact.html
   styles.css
   assets/icon.png
-  js/articles.js      # Search index
+  js/articles.js      # Search index (ids + hrefs)
+  js/i18n.js          # Language resolve + DOM apply
+  js/locales/*.js     # en / hi / gu / mr catalogs
   js/site.js
   pages/*.html        # Category guides
 ```
 
 ## Edit content
 
-1. Change files here in `awgp-mobile`.
+1. Change English (and translations) in `js/locales/*.js`, and matching `data-i18n` keys in HTML.
 2. Copy to `devn03215/awgpapp-help` and push (see HOSTING.txt).
 
-- **New article:** add to `js/articles.js` and a matching section `id` in `pages/*.html`.
-- **New category:** add to `categories` in `articles.js` and create `pages/your-category.html`.
+- **New article:** add to `js/articles.js`, locale `articles.*` / page keys, and a matching section `id` in `pages/*.html`.
+- **New category:** add to `categories` in `articles.js` + `categories.*` in locales, and create `pages/your-category.html`.
 
 ## Link from the app
 
 ```
 https://devn03215.github.io/awgpapp-help/
+https://devn03215.github.io/awgpapp-help/?lang=hi
+https://devn03215.github.io/awgpapp-help/pages/faq.html?lang=hi
 ```
 
 Update once when you move to a custom domain.

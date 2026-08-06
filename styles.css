@@ -16,6 +16,13 @@
   --radius-lg: 18px;
   --max: 760px;
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-indic: "Noto Sans Devanagari", "Noto Sans Gujarati", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[lang="hi"] body,
+html[lang="mr"] body,
+html[lang="gu"] body {
+  font-family: var(--font-indic);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -518,4 +525,47 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.lang-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 8px 0 0;
+}
+
+.lang-btn {
+  appearance: none;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.lang-btn.is-active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.header-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.site-header .header-tools .header-link {
+  align-self: flex-end;
 }
