@@ -2,66 +2,60 @@ GitHub Pages for the AWGP App Help Center (public repo under devn03215).
 
 Live URL (after deploy):
   https://devn03215.github.io/awgpapp-help/
+  https://devn03215.github.io/awgpapp-help/?lang=hi
 
 Same pattern as:
   https://devn03215.github.io/awgp-share/
   https://devn03215.github.io/awgp-books/
   https://devn03215.github.io/privacy-policy/
 
-## One-time setup (pick one method)
+## How Pages is published
 
-### Method A — Deploy from branch (recommended, matches awgp-share)
+Pages source is the **gh-pages** branch (static files only, includes `.nojekyll`).
+Source of truth for edits remains `help-landing/` on awgp-mobile → copy into this repo’s
+working tree on `main`, then publish a fresh `gh-pages` snapshot (below).
 
-1. Create a public repo: https://github.com/new
-   Name: awgpapp-help
-   Owner: devn03215
-
-2. Push the site (see “Deploy updates” below).
-
-3. Repo → Settings → Pages → Build and deployment:
-   - Source: **Deploy from a branch**
-   - Branch: **main**
-   - Folder: **/ (root)**
-   - Save
-
-No GitHub Actions required. Pushing to `main` updates the site in ~1 minute.
-
-### Method B — GitHub Actions
-
-Only if you prefer Actions over branch deploy.
-
-1. Repo → Settings → Pages → Build and deployment:
-   - Source: **GitHub Actions**
-
-2. Ensure `.github/workflows/deploy-pages.yml` is in the repo (copied from `help-landing/`).
-
-3. First run may need approval: Repo → Settings → Environments → `github-pages` → allow deployments.
-
-If deploy fails with “Deployment failed, try again later”:
-   - Switch to **Method A** (branch deploy), or
-   - Re-run the workflow, or
-   - Confirm the repo is **public** (free Pages requires public repos unless you have GitHub Pro).
+Do **not** rely on the legacy `main` branch Pages builder or the Actions
+`deploy-pages` workflow alone — those got stuck/queued after the i18n commit.
 
 ## Deploy updates
 
 From awgp-mobile (source of truth):
 
 ```powershell
+# 1) Sync files into the help repo checkout (main)
 Copy-Item c:\dev\git\awgp-mobile\help-landing\* c:\dev\git\awgpapp-help\ -Recurse -Force
+Copy-Item c:\dev\git\awgp-mobile\help-landing\.nojekyll c:\dev\git\awgpapp-help\.nojekyll -Force
 
 cd c:\dev\git\awgpapp-help
+git checkout main
 git add -A
 $env:GIT_AUTHOR_NAME="devn03215"
 $env:GIT_AUTHOR_EMAIL="devn03215@gmail.com"
 $env:GIT_COMMITTER_NAME="devn03215"
 $env:GIT_COMMITTER_EMAIL="devn03215@gmail.com"
-git commit -m "Update help center (i18n)"
-git push
+git commit -m "Update help center"
+git push origin main
+
+# 2) Publish static snapshot to gh-pages (what GitHub Pages serves)
+$export = "$env:TEMP\awgpapp-help-static"
+Remove-Item $export -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Path $export | Out-Null
+robocopy c:\dev\git\awgpapp-help $export /E /XD .git .github /NFL /NDL /NJH /NJS /nc /ns /np | Out-Null
+Copy-Item c:\dev\git\awgpapp-help\.nojekyll $export\.nojekyll -Force
+cd $export
+git init -b gh-pages
+git add -A
+git commit -m "Publish help center static site"
+git remote add origin https://github.com/devn03215/awgpapp-help.git
+git push -f origin gh-pages
 ```
 
-After deploy, verify localized pages, e.g.:
+After deploy, verify:
   https://devn03215.github.io/awgpapp-help/?lang=hi
   https://devn03215.github.io/awgpapp-help/pages/faq.html?lang=hi
+
+(Hard-refresh or wait ~1 minute for CDN.)
 
 First-time clone:
 
@@ -71,4 +65,4 @@ git clone https://github.com/devn03215/awgpapp-help.git c:\dev\git\awgpapp-help
 
 ## Custom domain later
 
-Add CNAME in repo root (e.g. help.awgp.org) and configure DNS + GitHub Pages custom domain.
+Add CNAME in the **gh-pages** root (e.g. help.awgp.org) and configure DNS + GitHub Pages custom domain.
