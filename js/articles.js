@@ -1,6 +1,7 @@
 /** Search index for the AWGP App Help Center (ids + hrefs; titles from i18n). */
 window.AWGP_HELP = {
   categories: [
+    { id: 'whats-new', emoji: '✨', href: 'pages/whats-new.html' },
     { id: 'getting-started', emoji: '👋', href: 'pages/getting-started.html' },
     { id: 'audio', emoji: '🎵', href: 'pages/audio.html' },
     { id: 'rituals', emoji: '🔥', href: 'pages/rituals.html' },
@@ -12,6 +13,7 @@ window.AWGP_HELP = {
     { id: 'faq', emoji: '⭐', href: 'pages/faq.html' },
   ],
   suggested: [
+    { id: 'whatsNewLatest', href: 'pages/whats-new.html#latest' },
     { id: 'install', href: 'pages/getting-started.html#install' },
     { id: 'playAudio', href: 'pages/audio.html#play-tracks' },
     { id: 'reminders', href: 'pages/daily-thought.html#reminders' },
@@ -19,6 +21,9 @@ window.AWGP_HELP = {
     { id: 'audioWontPlay', href: 'pages/troubleshooting.html#audio-wont-play' },
   ],
   articles: [
+    { id: 'whatsNewLatest', categoryId: 'whats-new', href: 'pages/whats-new.html#latest' },
+    { id: 'whatsNewUpdate', categoryId: 'whats-new', href: 'pages/whats-new.html#how-to-update' },
+    { id: 'whatsNewFeedback', categoryId: 'whats-new', href: 'pages/whats-new.html#feedback' },
     { id: 'welcome', categoryId: 'getting-started', href: 'pages/getting-started.html#welcome' },
     { id: 'install', categoryId: 'getting-started', href: 'pages/getting-started.html#install' },
     { id: 'account', categoryId: 'getting-started', href: 'pages/getting-started.html#account' },

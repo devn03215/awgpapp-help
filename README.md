@@ -40,8 +40,13 @@ help-landing/
   js/i18n.js          # Language resolve + DOM apply
   js/locales/*.js     # en / hi / gu / mr catalogs
   js/site.js
-  pages/*.html        # Category guides
+  pages/
+    whats-new.html    # Member-facing release highlights
+    *.html            # Category guides
 ```
+
+Internal engineering changelog (Keep a Changelog): `docs/CHANGELOG.md` in the app repo.  
+When you cut a store release, update both `docs/CHANGELOG.md` and the What’s New page (plus locale strings), then deploy this folder to Pages (see HOSTING.txt).
 
 ## Edit content
 
@@ -57,6 +62,7 @@ help-landing/
 https://devn03215.github.io/awgpapp-help/
 https://devn03215.github.io/awgpapp-help/?lang=hi
 https://devn03215.github.io/awgpapp-help/pages/faq.html?lang=hi
+https://devn03215.github.io/awgpapp-help/pages/whats-new.html?lang=hi
 ```
 
 Update once when you move to a custom domain.

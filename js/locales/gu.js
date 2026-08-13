@@ -13,6 +13,7 @@ window.AWGP_HELP_I18N.gu = {
     dailyThoughtTitle: 'દૈનિક વિચાર અને પંચાંગ — AWGP App સહાય કેન્દ્ર',
     accountTitle: 'એકાઉન્ટ અને ગોપનીયતા — AWGP App સહાય કેન્દ્ર',
     troubleshootingTitle: 'સમસ્યા નિવારણ — AWGP App સહાય કેન્દ્ર',
+    whatsNewTitle: 'નવું શું છે — AWGP App સહાય કેન્દ્ર',
   },
   chrome: {
     helpCenter: 'સહાય કેન્દ્ર',
@@ -35,6 +36,7 @@ window.AWGP_HELP_I18N.gu = {
     searchAria: 'સહાય લેખો શોધો',
   },
   categories: {
+    'whats-new': 'નવું શું છે',
     'getting-started': 'શરૂઆત કરો',
     audio: 'ઑડિયો અને મંત્રો',
     rituals: 'અનુષ્ઠાન અને યજ્ઞ',
@@ -46,6 +48,7 @@ window.AWGP_HELP_I18N.gu = {
     faq: 'વારંવાર પૂછાતા પ્રશ્નો',
   },
   suggested: {
+    whatsNewLatest: 'AWGP Appમાં નવું શું છે',
     install: 'iOS અથવા Android પર AWGP App ઇન્સ્ટૉલ કરો',
     playAudio: 'પ્રજ્ઞા ગીત, ભજન અને મંત્રો ચલાવો',
     reminders: 'દૈનિક વિચાર રિમાઇન્ડર સેટ કરો',
@@ -53,6 +56,9 @@ window.AWGP_HELP_I18N.gu = {
     audioWontPlay: 'ઑડિયો ચાલતું નથી — શું અજમાવવું',
   },
   articles: {
+    whatsNewLatest: 'નવીનતમ મુખ્ય બાબતો',
+    whatsNewUpdate: 'ઍપ કેવી રીતે અપડેટ કરવી',
+    whatsNewFeedback: 'પ્રતિસાદ શેર કરો',
     welcome: 'AWGP Appમાં આપનું સ્વાગત છે',
     install: 'iOS અને Android પર ઇન્સ્ટૉલ કરો',
     account: 'એકાઉન્ટની જરૂર નથી',
@@ -101,6 +107,38 @@ window.AWGP_HELP_I18N.gu = {
     faqWatch: 'Apple Watch સાથી ઍપ',
     faqPlatforms: 'Android વિરુદ્ધ iOS સુવિધાઓ',
     faqUpdates: 'ઍપ કેવી રીતે અપડેટ કરવી',
+  },
+  whatsNew: {
+    crumb: 'નવું શું છે',
+    heading: 'નવું શું છે',
+    intro:
+      'તાજેતરની AWGP App રિલીઝમાં શું સુધર્યું તેની ટૂંકી નોંધ. વિગતવાર માર્ગદર્શન માટે અન્ય સહાય વિષયો જુઓ.',
+    toc: {
+      latest: 'નવીનતમ મુખ્ય બાબતો',
+      howToUpdate: 'ઍપ કેવી રીતે અપડેટ કરવી',
+      feedback: 'પ્રતિસાદ શેર કરો',
+    },
+    latest: {
+      title: 'નવીનતમ મુખ્ય બાબતો',
+      lead: 'તાજેતરના અપડેટમાં સમાવેશ થાય છે:',
+      li1: 'iPad અને મોટી સ્ક્રીન પર વધુ સારું લેઆઉટ (કવર અને ઑડિયો સ્પીડ ડાયલ વાંચી શકાય તેવા રહે છે).',
+      li2: 'ઑડિયો માટે ઑફલાઇન ડાઉનલોડ અને સ્પષ્ટ લાઇબ્રેરી બ્રાઉઝિંગ.',
+      li3: 'કવર આર્ટ સાથે CarPlay બ્રાઉઝિંગ, અને ઑડિયો શોધ.',
+      li4: 'સરળ દૈનિક વિચાર શેરિંગ અને પ્રોફાઇલ અપડેટ તપાસ.',
+      li5: 'પહેલીવાર ખોલતી વખતે સ્વાગત અનુભવ.',
+      tipHtml:
+        'તમારું ઇન્સ્ટૉલ કરેલું વર્ઝન <strong>પ્રોફાઇલ → ઍપ વર્ઝન</strong>માં દેખાય છે. સ્ટોર બિલ્ડ નંબર iOS અને Android પર થોડા અલગ હોઈ શકે.',
+    },
+    howToUpdate: {
+      title: 'ઍપ કેવી રીતે અપડેટ કરવી',
+      bodyHtml:
+        'અપડેટ App Store અને Google Play દ્વારા આવે છે. ઑટોમેટિક અપડેટ ચાલુ કરો, અથવા “AWGP App” શોધીને <strong>Update</strong> ટૅપ કરો. જો પ્રોફાઇલમાં અપડેટ ઉપલબ્ધ દેખાય, ત્યાંથી સ્ટોર ખોલી શકો છો.',
+    },
+    feedback: {
+      title: 'પ્રતિસાદ શેર કરો',
+      bodyHtml:
+        '<strong>પ્રોફાઇલ → પ્રતિસાદ મોકલો</strong> દ્વારા જણાવો શું સારું છે અને શું નહીં. ડિવાઇસ અને ઍપ વર્ઝન આપમેળે જોડાય છે.',
+    },
   },
   faq: {
     crumb: 'વારંવાર પૂછાતા પ્રશ્નો',

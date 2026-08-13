@@ -13,6 +13,7 @@ window.AWGP_HELP_I18N.en = {
     dailyThoughtTitle: 'Daily Thought & Panchang — AWGP App Help Center',
     accountTitle: 'Account & Privacy — AWGP App Help Center',
     troubleshootingTitle: 'Troubleshooting — AWGP App Help Center',
+    whatsNewTitle: 'What’s New — AWGP App Help Center',
   },
   chrome: {
     helpCenter: 'Help Center',
@@ -35,6 +36,7 @@ window.AWGP_HELP_I18N.en = {
     searchAria: 'Search help articles',
   },
   categories: {
+    'whats-new': 'What’s New',
     'getting-started': 'Getting Started',
     audio: 'Audio & Mantras',
     rituals: 'Rituals & Yagya',
@@ -46,6 +48,7 @@ window.AWGP_HELP_I18N.en = {
     faq: 'FAQ',
   },
   suggested: {
+    whatsNewLatest: 'What’s new in AWGP App',
     install: 'Install AWGP App on iOS or Android',
     playAudio: 'Play Pragya Geet, bhajans, and mantras',
     reminders: 'Set up Daily Thought reminders',
@@ -53,6 +56,9 @@ window.AWGP_HELP_I18N.en = {
     audioWontPlay: 'Audio not playing — what to try',
   },
   articles: {
+    whatsNewLatest: 'Latest highlights',
+    whatsNewUpdate: 'How to update',
+    whatsNewFeedback: 'Share feedback',
     welcome: 'Welcome to AWGP App',
     install: 'Install on iOS & Android',
     account: 'No account needed',
@@ -101,6 +107,38 @@ window.AWGP_HELP_I18N.en = {
     faqWatch: 'Apple Watch companion',
     faqPlatforms: 'Android vs iOS features',
     faqUpdates: 'How to update the app',
+  },
+  whatsNew: {
+    crumb: 'What’s New',
+    heading: 'What’s New',
+    intro:
+      'Short notes on what improved in recent AWGP App releases. For step-by-step guides, browse the other Help Center topics.',
+    toc: {
+      latest: 'Latest highlights',
+      howToUpdate: 'How to update',
+      feedback: 'Share feedback',
+    },
+    latest: {
+      title: 'Latest highlights',
+      lead: 'Recent updates include:',
+      li1: 'Better layout on iPad and larger screens (covers and Audio Speed Dial stay readable).',
+      li2: 'Offline downloads for audio and clearer Library browsing.',
+      li3: 'CarPlay browsing with cover art, plus audio search.',
+      li4: 'Smoother Daily Thought sharing and Profile update checks.',
+      li5: 'Welcome experience on first launch.',
+      tipHtml:
+        'Your installed version is listed under <strong>Profile → App Version</strong>. Store build numbers can differ slightly between iOS and Android.',
+    },
+    howToUpdate: {
+      title: 'How to update',
+      bodyHtml:
+        'Updates ship through the App Store and Google Play. Enable automatic updates, or search “AWGP App” and tap <strong>Update</strong>. If Profile shows an update is available, you can open the store listing from there.',
+    },
+    feedback: {
+      title: 'Share feedback',
+      bodyHtml:
+        'Use <strong>Profile → Submit Feedback</strong> to tell us what works and what doesn’t. Device and app version are included automatically.',
+    },
   },
   faq: {
     crumb: 'FAQ',

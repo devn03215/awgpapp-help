@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.whatsNewTitle">What’s New — AWGP App Help Center</title>
+  <link rel="icon" href="../assets/icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
+        <span class="brand-text">
+          <span class="brand-name">AWGP App</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
+        </span>
+      </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
+    </header>
+
+    <div class="page-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
+        <span>/</span>
+        <span data-i18n="whatsNew.crumb">What’s New</span>
+      </nav>
+      <h1><span aria-hidden="true">✨</span> <span data-i18n="whatsNew.heading">What’s New</span></h1>
+    </div>
+
+    <nav class="article-list" aria-label="Articles in this category">
+      <a href="#latest" data-i18n="whatsNew.toc.latest">Latest highlights</a>
+      <a href="#how-to-update" data-i18n="whatsNew.toc.howToUpdate">How to update</a>
+      <a href="#feedback" data-i18n="whatsNew.toc.feedback">Share feedback</a>
+    </nav>
+
+    <article class="article-body">
+      <p data-i18n="whatsNew.intro">
+        Short notes on what improved in recent AWGP App releases. For step-by-step guides, browse the other Help Center topics.
+      </p>
+
+      <h2 id="latest" data-i18n="whatsNew.latest.title">Latest highlights</h2>
+      <p data-i18n="whatsNew.latest.lead">Recent updates include:</p>
+      <ul>
+        <li data-i18n="whatsNew.latest.li1">Better layout on iPad and larger screens (covers and Audio Speed Dial stay readable).</li>
+        <li data-i18n="whatsNew.latest.li2">Offline downloads for audio and clearer Library browsing.</li>
+        <li data-i18n="whatsNew.latest.li3">CarPlay browsing with cover art, plus audio search.</li>
+        <li data-i18n="whatsNew.latest.li4">Smoother Daily Thought sharing and Profile update checks.</li>
+        <li data-i18n="whatsNew.latest.li5">Welcome experience on first launch.</li>
+      </ul>
+      <div class="tip" data-i18n-html="whatsNew.latest.tipHtml">
+        Your installed version is listed under <strong>Profile → App Version</strong>. Store build numbers can differ slightly between iOS and Android.
+      </div>
+
+      <h2 id="how-to-update" data-i18n="whatsNew.howToUpdate.title">How to update</h2>
+      <p data-i18n-html="whatsNew.howToUpdate.bodyHtml">
+        Updates ship through the App Store and Google Play. Enable automatic updates, or search “AWGP App” and tap
+        <strong>Update</strong>. If Profile shows an update is available, you can open the store listing from there.
+      </p>
+
+      <h2 id="feedback" data-i18n="whatsNew.feedback.title">Share feedback</h2>
+      <p data-i18n-html="whatsNew.feedback.bodyHtml">
+        Use <strong>Profile → Submit Feedback</strong> to tell us what works and what doesn’t. Device and app version are included automatically.
+      </p>
+    </article>
+
+    <p class="back-link"><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
+  </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
+</body>
+</html>
