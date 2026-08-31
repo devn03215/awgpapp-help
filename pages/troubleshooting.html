@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.troubleshootingTitle">Troubleshooting — AWGP App Help Center</title>
+  <link rel="icon" href="../assets/icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
+        <span class="brand-text">
+          <span class="brand-name">AWGP App</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
+        </span>
+      </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
+    </header>
+
+    <div class="page-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
+        <span>/</span>
+        <span data-i18n="troubleshooting.crumb">Troubleshooting</span>
+      </nav>
+      <h1><span aria-hidden="true">🌩️</span> <span data-i18n="troubleshooting.heading">Troubleshooting</span></h1>
+    </div>
+
+    <nav class="article-list" aria-label="Articles in this category">
+      <a href="#audio-wont-play" data-i18n="troubleshooting.toc.audioWontPlay">Audio won&apos;t play</a>
+      <a href="#downloads" data-i18n="troubleshooting.toc.downloads">Downloads &amp; storage</a>
+      <a href="#notifications" data-i18n="troubleshooting.toc.notifications">Notifications not arriving</a>
+      <a href="#sign-in" data-i18n="troubleshooting.toc.signIn">Account registration (not available yet)</a>
+      <a href="#feedback" data-i18n="troubleshooting.toc.feedback">Send feedback or report a bug</a>
+    </nav>
+
+    <article class="article-body">
+      <h2 id="audio-wont-play" data-i18n="troubleshooting.audioWontPlay.title">Audio won&apos;t play</h2>
+      <ol>
+        <li data-i18n="troubleshooting.audioWontPlay.li1">Check volume and silent mode / focus settings on your device.</li>
+        <li data-i18n="troubleshooting.audioWontPlay.li2">Switch Wi‑Fi and cellular to rule out network blocks.</li>
+        <li data-i18n="troubleshooting.audioWontPlay.li3">Force-quit AWGP and reopen the track.</li>
+        <li data-i18n="troubleshooting.audioWontPlay.li4">Update to the latest App Store or Play Store version.</li>
+        <li data-i18n="troubleshooting.audioWontPlay.li5">If using Bluetooth or CarPlay, disconnect and reconnect once.</li>
+      </ol>
+
+      <h2 id="downloads" data-i18n="troubleshooting.downloads.title">Downloads &amp; storage</h2>
+      <p data-i18n="troubleshooting.downloads.p1">
+        If a download fails, ensure you have free space (Profile → Storage). Delete old downloads
+        you no longer need, then retry on Wi‑Fi.
+      </p>
+      <p data-i18n="troubleshooting.downloads.p2">
+        Large books or magazines may take several minutes on slow connections — keep the app in
+        the foreground during the first download.
+      </p>
+
+      <h2 id="notifications" data-i18n="troubleshooting.notifications.title">Notifications not arriving</h2>
+      <ol>
+        <li data-i18n="troubleshooting.notifications.li1">iOS/Android Settings → AWGP → Notifications → Allow.</li>
+        <li data-i18n="troubleshooting.notifications.li2">Confirm reminder is enabled inside AWGP Profile.</li>
+        <li data-i18n="troubleshooting.notifications.li3">Disable battery saver restrictions for AWGP on Android.</li>
+        <li data-i18n="troubleshooting.notifications.li4">On iOS, Scheduled Summary and Focus modes can delay alerts.</li>
+      </ol>
+
+      <h2 id="sign-in" data-i18n="troubleshooting.signIn.title">Account registration (not available yet)</h2>
+      <p data-i18n="troubleshooting.signIn.p1">
+        AWGP does not offer sign-up or sign-in in the current release. If you see old screenshots
+        or docs mentioning accounts, ignore them for now — onboarding is still in development.
+      </p>
+      <p data-i18n="troubleshooting.signIn.p2">
+        When registration opens in a future version, this page will include troubleshooting for
+        email and phone sign-in. Until then, use the app without an account; your data stays on
+        your device.
+      </p>
+
+      <h2 id="feedback" data-i18n="troubleshooting.feedback.title">Send feedback or report a bug</h2>
+      <p data-i18n-html="troubleshooting.feedback.p1Html">
+        <strong>Profile → Send feedback</strong> attaches app version and device info automatically.
+        Describe what you expected, what happened, and whether it reproduces every time.
+      </p>
+      <p data-i18n-html="troubleshooting.feedback.p2Html">
+        You can also email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> or use
+        <a href="../contact.html">Contact support</a>.
+      </p>
+    </article>
+
+    <footer class="site-footer">
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
+    </footer>
+  </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
+</body>
+</html>

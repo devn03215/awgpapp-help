@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.audioTitle">Audio & Mantras — AWGP App Help Center</title>
+  <link rel="icon" href="../assets/icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
+        <span class="brand-text">
+          <span class="brand-name">AWGP App</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
+        </span>
+      </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
+    </header>
+
+    <div class="page-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
+        <span>/</span>
+        <span data-i18n="audio.crumb">Audio &amp; Mantras</span>
+      </nav>
+      <h1><span aria-hidden="true">🎵</span> <span data-i18n="audio.heading">Audio &amp; Mantras</span></h1>
+    </div>
+
+    <nav class="article-list" aria-label="Articles in this category">
+      <a href="#play-tracks" data-i18n="audio.toc.playTracks">Playing audio tracks</a>
+      <a href="#gayatri" data-i18n="audio.toc.gayatri">Gayatri Mantra &amp; aarti</a>
+      <a href="#playlists" data-i18n="audio.toc.playlists">Playlists (private &amp; public)</a>
+      <a href="#mini-player" data-i18n="audio.toc.miniPlayer">Mini player &amp; CarPlay</a>
+      <a href="#sharing" data-i18n="audio.toc.sharing">Sharing audio</a>
+    </nav>
+
+    <article class="article-body">
+      <h2 id="play-tracks" data-i18n="audio.playTracks.title">Playing audio tracks</h2>
+      <p data-i18n-html="audio.playTracks.p1Html">
+        Open the <strong>Audio</strong> tab to browse Mantra, Playlists, Pragya Geet, and Aarti.
+        Tap any track to open the full player with artwork, progress, and lyrics (when available).
+      </p>
+      <p data-i18n-html="audio.playTracks.p2Html">
+        Use the segment control at the top to jump between categories. Pragya Geet includes a
+        <strong>Speed dial</strong> carousel for quick access to favorites.
+      </p>
+
+      <h2 id="gayatri" data-i18n="audio.gayatri.title">Gayatri Mantra &amp; aarti</h2>
+      <p data-i18n-html="audio.gayatri.bodyHtml">
+        The Gayatri Mantra track includes extra context and classification options. Aarti tracks
+        are grouped under the <strong>Aarti</strong> section for evening prayers and chalisa.
+      </p>
+
+      <h2 id="playlists" data-i18n="audio.playlists.title">Playlists (private &amp; public)</h2>
+      <ul>
+        <li data-i18n-html="audio.playlists.liPrivateHtml"><strong>Private playlists</strong> — created on your device under Audio → Playlists → Private. Great for personal sadhana sets.</li>
+        <li data-i18n-html="audio.playlists.liPublicHtml"><strong>Public playlists</strong> — curated collections shared with all users.</li>
+      </ul>
+      <p data-i18n-html="audio.playlists.p1Html">From the full player, use <strong>Add to playlist</strong> to save a track to a private list.</p>
+
+      <h2 id="mini-player" data-i18n="audio.miniPlayer.title">Mini player &amp; CarPlay</h2>
+      <p data-i18n="audio.miniPlayer.p1">
+        When you leave the Audio tab while something is playing, a mini player appears above the
+        tab bar. Tap it to return to the full player.
+      </p>
+      <p data-i18n-html="audio.miniPlayer.p2Html">
+        On iOS, AWGP supports <strong>CarPlay</strong> for audio playback in supported builds.
+        Connect your iPhone to a CarPlay-enabled vehicle or simulator.
+      </p>
+
+      <h2 id="sharing" data-i18n="audio.sharing.title">Sharing audio</h2>
+      <p data-i18n="audio.sharing.body">
+        Tap the share icon on a track to send a link via WhatsApp, Messages, or email. Recipients
+        see a preview and can open the track in AWGP if they have the app installed.
+      </p>
+    </article>
+
+    <footer class="site-footer">
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
+    </footer>
+  </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
+</body>
+</html>
