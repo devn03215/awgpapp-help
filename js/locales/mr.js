@@ -244,6 +244,8 @@ window.AWGP_HELP_I18N.mr = {
     install: {
       title: 'iOS आणि Android वर इन्स्टॉल करा',
       p1: 'तुमच्या डिव्हाइसच्या अॅप स्टोअरमधून AWGP App डाउनलोड करा:',
+      p2Html:
+        'किंवा आमचे <a href="https://awgp-share.awgp.workers.dev/get" rel="noopener">इन्स्टॉल पेज</a> उघडा — QR कोड, लिंक कॉपी, किंवा प्रिंट पोस्टरसाठी.',
       tipHtml:
         'WhatsApp किंवा SMS मधून शेअर केलेल्या लिंक्स प्रथम वेब पृष्ठ उघडतात. अॅप इन्स्टॉल झाल्यानंतर <strong>Open in AWGP App</strong> टॅप करा.',
     },
