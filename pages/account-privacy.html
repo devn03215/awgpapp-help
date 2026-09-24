@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.accountTitle">Account & Privacy — AWGP App Help Center</title>
+  <link rel="icon" href="../assets/icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <img src="../assets/icon.png" width="40" height="40" alt="AWGP App" />
+        <span class="brand-text">
+          <span class="brand-name">AWGP App</span>
+          <span class="brand-sub" data-i18n="chrome.brandSub">Help Center</span>
+        </span>
+      </a>
+      <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language"></div>
+    </header>
+
+    <div class="page-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" data-i18n="chrome.helpCenter">Help Center</a>
+        <span>/</span>
+        <span data-i18n="account.crumb">Account &amp; Privacy</span>
+      </nav>
+      <h1><span aria-hidden="true">🔐</span> <span data-i18n="account.heading">Account &amp; Privacy</span></h1>
+    </div>
+
+    <nav class="article-list" aria-label="Articles in this category">
+      <a href="#using-the-app" data-i18n="account.toc.usingApp">Using AWGP App today</a>
+      <a href="#privacy" data-i18n="account.toc.privacy">Privacy &amp; your data</a>
+      <a href="#delete-data" data-i18n="account.toc.deleteData">Request data deletion</a>
+      <a href="#crash-reports" data-i18n="account.toc.crashReports">Anonymous crash reports</a>
+      <a href="#notifications" data-i18n="account.toc.notifications">Notification settings</a>
+      <a href="#local-data" data-i18n="account.toc.localData">Clear local data</a>
+    </nav>
+
+    <article class="article-body">
+      <h2 id="using-the-app" data-i18n="account.usingApp.title">Using AWGP App today</h2>
+      <p data-i18n="account.usingApp.p1">
+        AWGP App does not offer public user registration or sign-in in the current release. You can
+        use the full app without creating an account.
+      </p>
+      <p data-i18n-html="account.usingApp.p2Html">
+        Reading progress, playlists, downloads, reminders, and preferences are stored
+        <strong>on your device</strong> unless we say otherwise in a future update.
+      </p>
+      <p data-i18n-html="account.usingApp.p3Html">
+        Manage appearance (light/dark/system), notifications, storage, and other options from
+        the <strong>Profile</strong> tab. If account sign-in becomes generally available later, we
+        will update this Help Center with sign-up and sign-in steps.
+      </p>
+
+      <h2 id="privacy" data-i18n="account.privacy.title">Privacy &amp; your data</h2>
+      <p data-i18n="account.privacy.p1">
+        Most day-to-day data stays on your phone or tablet — for example reading position,
+        downloaded files, ritual progress, and reminder settings.
+      </p>
+      <p data-i18n="account.privacy.p2">
+        When you send feedback, or if you optionally enable anonymous crash reports, we may receive
+        what you write plus limited app and device details (such as OS version, app version, and
+        technical identifiers needed to deliver notifications or support) so we can fix issues.
+        App libraries and services we use to run the app may process device or other IDs only for
+        app functionality — not for advertising or sale.
+      </p>
+      <p data-i18n-html="account.privacy.p3Html">
+        We do not sell your personal information. Read the full policy:
+        <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a>
+        (also available from <strong>Profile → Your data</strong> when shown in the app).
+      </p>
+
+      <h2 id="delete-data" data-i18n="account.deleteData.title">Request data deletion</h2>
+      <p data-i18n="account.deleteData.intro">
+        AWGP App (Google Play / App Store listing). Use the steps below to request deletion of
+        data we may hold on our servers.
+      </p>
+      <ol>
+        <li data-i18n-html="account.deleteData.step1Html">
+          Email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> with the subject
+          <strong>Data deletion request — AWGP App</strong>.
+        </li>
+        <li data-i18n="account.deleteData.step2">
+          Include enough detail for us to find your data (for example the approximate date you
+          sent feedback, or text from the message). Do not send passwords.
+        </li>
+        <li data-i18n="account.deleteData.step3">
+          We will delete feedback and optional crash reports associated with your request from our
+          servers within a reasonable period (typically within 30 days).
+        </li>
+      </ol>
+      <p data-i18n="account.deleteData.kept">
+        What we delete on request: feedback you submitted and anonymous crash reports you opted
+        into (when we can identify them from your email).
+      </p>
+      <p data-i18n="account.deleteData.onDevice">
+        What stays on your device only until you clear it: reading progress, downloads, playlists,
+        reminders, and local preferences. Remove those via Profile → Manage Storage, or by
+        uninstalling AWGP App. Uninstalling removes on-device app data.
+      </p>
+      <p data-i18n-html="account.deleteData.policyHtml">
+        Full policy:
+        <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.
+      </p>
+
+      <h2 id="crash-reports" data-i18n="account.crashReports.title">Anonymous crash reports</h2>
+      <p data-i18n-html="account.crashReports.p1Html">
+        Under <strong>Profile → Application → Anonymous crash reports</strong> you can optionally
+        allow AWGP to receive a short technical report when the app crashes. This setting is
+        <strong>off by default</strong>.
+      </p>
+      <p data-i18n="account.crashReports.p2">When enabled, a report may include:</p>
+      <ul>
+        <li data-i18n="account.crashReports.li1">Error message and a scrubbed stack trace</li>
+        <li data-i18n="account.crashReports.li2">App version and build number</li>
+        <li data-i18n="account.crashReports.li3">Device OS name and version</li>
+      </ul>
+      <p data-i18n-html="account.crashReports.p3Html">
+        It does <strong>not</strong> include your books, reading progress, playlists, downloads,
+        account content, or other personal library data. Emails, tokens, and URL query strings are
+        removed before anything is stored or sent.
+      </p>
+      <p data-i18n="account.crashReports.p4">
+        Reports are stored on device first and only uploaded if you turn the setting on. You can
+        turn it off again anytime from the same Profile toggle.
+      </p>
+
+      <h2 id="notifications" data-i18n="account.notifications.title">Notification settings</h2>
+      <p data-i18n="account.notifications.p1">Control reminders from Profile:</p>
+      <ul>
+        <li data-i18n="account.notifications.li1">Daily Thought</li>
+        <li data-i18n="account.notifications.li2">Book and magazine reading reminders</li>
+        <li data-i18n="account.notifications.li3">System permission must be allowed for any alert to appear</li>
+      </ul>
+      <p data-i18n="account.notifications.p2">These settings are stored locally on your device.</p>
+
+      <h2 id="local-data" data-i18n="account.localData.title">Clear local data</h2>
+      <p data-i18n-html="account.localData.p1Html">
+        To free space or remove downloads, open <strong>Profile → Manage Storage</strong> and
+        delete items you no longer need. Uninstalling AWGP App removes app data from your device.
+      </p>
+      <div class="tip" data-i18n-html="account.localData.tipHtml">
+        For data that may already be on our servers (feedback or crash reports), use
+        <a href="#delete-data">Request data deletion</a> above.
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <p><a href="../index.html" data-i18n="chrome.backToHelp">← Back to Help Center</a></p>
+    </footer>
+  </div>
+
+  <script src="../js/locales/en.js"></script>
+  <script src="../js/locales/hi.js"></script>
+  <script src="../js/locales/gu.js"></script>
+  <script src="../js/locales/mr.js"></script>
+  <script src="../js/i18n.js"></script>
+</body>
+</html>
