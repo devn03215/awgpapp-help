@@ -33,6 +33,7 @@
     <nav class="article-list" aria-label="Articles in this category">
       <a href="#using-the-app" data-i18n="account.toc.usingApp">Using AWGP App today</a>
       <a href="#privacy" data-i18n="account.toc.privacy">Privacy &amp; your data</a>
+      <a href="#delete-data" data-i18n="account.toc.deleteData">Request data deletion</a>
       <a href="#crash-reports" data-i18n="account.toc.crashReports">Anonymous crash reports</a>
       <a href="#notifications" data-i18n="account.toc.notifications">Notification settings</a>
       <a href="#local-data" data-i18n="account.toc.localData">Clear local data</a>
@@ -41,31 +42,68 @@
     <article class="article-body">
       <h2 id="using-the-app" data-i18n="account.usingApp.title">Using AWGP App today</h2>
       <p data-i18n="account.usingApp.p1">
-        AWGP App does not offer user registration or sign-in yet. Onboarding and account creation are
-        still in development and are not available in the current app release.
+        AWGP App does not offer public user registration or sign-in in the current release. You can
+        use the full app without creating an account.
       </p>
       <p data-i18n-html="account.usingApp.p2Html">
-        You can use the full app without an account. Reading progress, playlists, downloads,
-        reminders, and preferences are stored <strong>on your device</strong> unless we say
-        otherwise in a future update.
+        Reading progress, playlists, downloads, reminders, and preferences are stored
+        <strong>on your device</strong> unless we say otherwise in a future update.
       </p>
       <p data-i18n-html="account.usingApp.p3Html">
         Manage appearance (light/dark/system), notifications, storage, and other options from
-        the <strong>Profile</strong> tab. When accounts launch in a later version, we will update
-        this help center with sign-up and sign-in instructions.
+        the <strong>Profile</strong> tab. If account sign-in becomes generally available later, we
+        will update this Help Center with sign-up and sign-in steps.
       </p>
 
       <h2 id="privacy" data-i18n="account.privacy.title">Privacy &amp; your data</h2>
       <p data-i18n="account.privacy.p1">
-        Today, AWGP App mainly keeps data on your phone or tablet — for example reading position,
-        downloaded files, ritual progress, and reminder settings. If you send feedback through
-        the app, we receive what you write plus basic device and app version details to help us
-        fix issues.
+        Most day-to-day data stays on your phone or tablet — for example reading position,
+        downloaded files, ritual progress, and reminder settings.
       </p>
-      <p data-i18n-html="account.privacy.p2Html">
+      <p data-i18n="account.privacy.p2">
+        When you send feedback, or if you optionally enable anonymous crash reports, we may receive
+        what you write plus limited app and device details (such as OS version, app version, and
+        technical identifiers needed to deliver notifications or support) so we can fix issues.
+        App libraries and services we use to run the app may process device or other IDs only for
+        app functionality — not for advertising or sale.
+      </p>
+      <p data-i18n-html="account.privacy.p3Html">
         We do not sell your personal information. Read the full policy:
         <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a>
         (also available from <strong>Profile → Your data</strong> when shown in the app).
+      </p>
+
+      <h2 id="delete-data" data-i18n="account.deleteData.title">Request data deletion</h2>
+      <p data-i18n="account.deleteData.intro">
+        AWGP App (Google Play / App Store listing). Use the steps below to request deletion of
+        data we may hold on our servers.
+      </p>
+      <ol>
+        <li data-i18n-html="account.deleteData.step1Html">
+          Email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> with the subject
+          <strong>Data deletion request — AWGP App</strong>.
+        </li>
+        <li data-i18n="account.deleteData.step2">
+          Include enough detail for us to find your data (for example the approximate date you
+          sent feedback, or text from the message). Do not send passwords.
+        </li>
+        <li data-i18n="account.deleteData.step3">
+          We will delete feedback and optional crash reports associated with your request from our
+          servers within a reasonable period (typically within 30 days).
+        </li>
+      </ol>
+      <p data-i18n="account.deleteData.kept">
+        What we delete on request: feedback you submitted and anonymous crash reports you opted
+        into (when we can identify them from your email).
+      </p>
+      <p data-i18n="account.deleteData.onDevice">
+        What stays on your device only until you clear it: reading progress, downloads, playlists,
+        reminders, and local preferences. Remove those via Profile → Manage Storage, or by
+        uninstalling AWGP App. Uninstalling removes on-device app data.
+      </p>
+      <p data-i18n-html="account.deleteData.policyHtml">
+        Full policy:
+        <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.
       </p>
 
       <h2 id="crash-reports" data-i18n="account.crashReports.title">Anonymous crash reports</h2>
@@ -104,14 +142,9 @@
         To free space or remove downloads, open <strong>Profile → Manage Storage</strong> and
         delete items you no longer need. Uninstalling AWGP App removes app data from your device.
       </p>
-      <p data-i18n-html="account.localData.p2Html">
-        If you previously sent feedback that included personal information and want it removed,
-        email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> with enough detail for
-        us to find your message.
-      </p>
-      <div class="tip" data-i18n="account.localData.tip">
-        Account-based data deletion will apply once user registration is available. Until then,
-        clearing local storage or uninstalling the app is how to remove on-device data.
+      <div class="tip" data-i18n-html="account.localData.tipHtml">
+        For data that may already be on our servers (feedback or crash reports), use
+        <a href="#delete-data">Request data deletion</a> above.
       </div>
     </article>
 

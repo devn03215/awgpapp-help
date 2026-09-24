@@ -141,6 +141,19 @@ window.AWGP_HELP_I18N.en = {
       li17:
         'Library → Magazines “Recent” opens the latest year with issues ready to read (instead of a blank current year).',
       li18: 'Ritual steps let you select and copy mantra or explanation text—for example to share on WhatsApp.',
+      li19:
+        'Namakaran Sanskar under Rituals → Karmkand → Sanskar — naming ceremony guidance with mantras and steps.',
+      li20:
+        'Annaprashan Sanskar under Rituals → Karmkand → Sanskar — first solid-food ceremony with mantras and steps.',
+      li21:
+        'Mundan, Vidyarambh, and Yajnopavit Sanskars under Rituals → Karmkand → Sanskar — step-by-step guidance with mantras.',
+      li22:
+        'Lagna, Vanaprastha, Antyeshti, Maranottar, Janmadivas, and Lagnadivas Sanskars under Rituals → Karmkand → Sanskar — step-by-step guidance with mantras.',
+      li23:
+        'Audiobooks and podcasts can minimize to a mini player so you can keep browsing the app while listening.',
+      li24:
+        'Thought Settings now matches Library Settings: same header, sections, reset, and a preview that stays at the top while you change font and colors.',
+      li25: 'Shared Daily Thought cards now use your Thought Settings colors and background.',
       tipHtml:
         'Your installed version is listed under <strong>Profile → App Version</strong>. Store build numbers can differ slightly between iOS and Android.',
     },
@@ -315,7 +328,7 @@ window.AWGP_HELP_I18N.en = {
     miniPlayer: {
       title: 'Mini player & CarPlay',
       p1:
-        'When you leave the Audio tab while something is playing, a mini player appears above the tab bar. Tap it to return to the full player.',
+        'When you leave a playing track, audiobook, or podcast, a mini player appears above the tab bar. Tap it to return to the full player.',
       p2Html:
         'On iOS, AWGP supports <strong>CarPlay</strong> for audio playback in supported builds. Connect your iPhone to a CarPlay-enabled vehicle or simulator.',
     },
@@ -383,7 +396,7 @@ window.AWGP_HELP_I18N.en = {
     audiobooks: {
       title: 'Audiobooks & podcasts',
       body:
-        'Audiobooks and podcasts have their own sections with chapter or episode lists. Playback continues in the background like other audio in AWGP.',
+        'Audiobooks and podcasts have their own sections with chapter or episode lists. Use the down chevron to keep listening in a mini player while you browse the rest of the app.',
     },
     offline: {
       title: 'Reading lists & offline',
@@ -526,6 +539,7 @@ window.AWGP_HELP_I18N.en = {
     toc: {
       usingApp: 'Using AWGP App today',
       privacy: 'Privacy & your data',
+      deleteData: 'Request data deletion',
       crashReports: 'Anonymous crash reports',
       notifications: 'Notification settings',
       localData: 'Clear local data',
@@ -533,18 +547,37 @@ window.AWGP_HELP_I18N.en = {
     usingApp: {
       title: 'Using AWGP App today',
       p1:
-        'AWGP App does not offer user registration or sign-in yet. Onboarding and account creation are still in development and are not available in the current app release.',
+        'AWGP App does not offer public user registration or sign-in in the current release. You can use the full app without creating an account.',
       p2Html:
-        'You can use the full app without an account. Reading progress, playlists, downloads, reminders, and preferences are stored <strong>on your device</strong> unless we say otherwise in a future update.',
+        'Reading progress, playlists, downloads, reminders, and preferences are stored <strong>on your device</strong> unless we say otherwise in a future update.',
       p3Html:
-        'Manage appearance (light/dark/system), notifications, storage, and other options from the <strong>Profile</strong> tab. When accounts launch in a later version, we will update this help center with sign-up and sign-in instructions.',
+        'Manage appearance (light/dark/system), notifications, storage, and other options from the <strong>Profile</strong> tab. If account sign-in becomes generally available later, we will update this Help Center with sign-up and sign-in steps.',
     },
     privacy: {
       title: 'Privacy & your data',
       p1:
-        'Today, AWGP App mainly keeps data on your phone or tablet — for example reading position, downloaded files, ritual progress, and reminder settings. If you send feedback through the app, we receive what you write plus basic device and app version details to help us fix issues.',
-      p2Html:
+        'Most day-to-day data stays on your phone or tablet — for example reading position, downloaded files, ritual progress, and reminder settings.',
+      p2:
+        'When you send feedback, or if you optionally enable anonymous crash reports, we may receive what you write plus limited app and device details (such as OS version, app version, and technical identifiers needed to deliver notifications or support) so we can fix issues. App libraries and services we use to run the app may process device or other IDs only for app functionality — not for advertising or sale.',
+      p3Html:
         'We do not sell your personal information. Read the full policy: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a> (also available from <strong>Profile → Your data</strong> when shown in the app).',
+    },
+    deleteData: {
+      title: 'Request data deletion',
+      intro:
+        'AWGP App (Google Play / App Store listing). Use the steps below to request deletion of data we may hold on our servers.',
+      step1Html:
+        'Email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> with the subject <strong>Data deletion request — AWGP App</strong>.',
+      step2:
+        'Include enough detail for us to find your data (for example the approximate date you sent feedback, or text from the message). Do not send passwords.',
+      step3:
+        'We will delete feedback and optional crash reports associated with your request from our servers within a reasonable period (typically within 30 days).',
+      kept:
+        'What we delete on request: feedback you submitted and anonymous crash reports you opted into (when we can identify them from your email).',
+      onDevice:
+        'What stays on your device only until you clear it: reading progress, downloads, playlists, reminders, and local preferences. Remove those via Profile → Manage Storage, or by uninstalling AWGP App. Uninstalling removes on-device app data.',
+      policyHtml:
+        'Full policy: <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.',
     },
     crashReports: {
       title: 'Anonymous crash reports',
@@ -571,10 +604,8 @@ window.AWGP_HELP_I18N.en = {
       title: 'Clear local data',
       p1Html:
         'To free space or remove downloads, open <strong>Profile → Manage Storage</strong> and delete items you no longer need. Uninstalling AWGP App removes app data from your device.',
-      p2Html:
-        'If you previously sent feedback that included personal information and want it removed, email <a href="mailto:devn03215@gmail.com">devn03215@gmail.com</a> with enough detail for us to find your message.',
-      tip:
-        'Account-based data deletion will apply once user registration is available. Until then, clearing local storage or uninstalling the app is how to remove on-device data.',
+      tipHtml:
+        'For data that may already be on our servers (feedback or crash reports), use <a href="#delete-data">Request data deletion</a> above.',
     },
   },
   troubleshooting: {
