@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <script>
+    // Keep old GitHub Pages bookmarks, language settings, and shared routes working.
+    (function () {
+      var prefix = '/awgpapp-help';
+      if (location.hostname !== 'devn03215.github.io' ||
+          (location.pathname !== prefix && !location.pathname.startsWith(prefix + '/'))) return;
+      var suffix = location.pathname.slice(prefix.length).replace(/^\//, '');
+      if (suffix === 'index.html') suffix = '';
+      var destination = new URL('https://awgp.link');
+      destination.pathname = '/help/' + suffix;
+      destination.search = location.search;
+      destination.hash = location.hash;
+      location.replace(destination.href);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n="meta.accountTitle">Account & Privacy — AWGP App Help Center</title>
   <link rel="icon" href="../assets/icon.png" type="image/png" />
@@ -69,7 +84,7 @@
       </p>
       <p data-i18n-html="account.privacy.p3Html">
         We do not sell your personal information. Read the full policy:
-        <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a>
+        <a href="https://awgp.link/privacy-policy.html" rel="noopener">Privacy Policy</a>
         (also available from <strong>Profile → Your data</strong> when shown in the app).
       </p>
 
@@ -103,7 +118,7 @@
       </p>
       <p data-i18n-html="account.deleteData.policyHtml">
         Full policy:
-        <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.
+        <a href="https://awgp.link/privacy-policy.html#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.
       </p>
 
       <h2 id="crash-reports" data-i18n="account.crashReports.title">Anonymous crash reports</h2>

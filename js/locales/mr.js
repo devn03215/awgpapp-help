@@ -224,7 +224,7 @@ window.AWGP_HELP_I18N.mr = {
     emailHeading: 'ईमेल',
     emailGeneral: 'सामान्य मदत:',
     emailPrivacyHtml:
-      'गोपनीयता आणि डेटा विनंत्या: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">गोपनीयता धोरण</a>',
+      'गोपनीयता आणि डेटा विनंत्या: <a href="https://awgp.link/privacy-policy.html" rel="noopener">गोपनीयता धोरण</a>',
     websiteHeading: 'वेबसाइट',
     websiteBodyHtml:
       'शिक्षण, प्रकाशने आणि संघटनात्मक माहितीसाठी <a href="https://www.awgp.org" rel="noopener">awgp.org</a> भेट द्या.',
@@ -258,7 +258,7 @@ window.AWGP_HELP_I18N.mr = {
       title: 'iOS आणि Android वर इन्स्टॉल करा',
       p1: 'तुमच्या डिव्हाइसच्या अॅप स्टोअरमधून AWGP App डाउनलोड करा:',
       p2Html:
-        'किंवा आमचे <a href="https://awgp-share.awgp.workers.dev/get" rel="noopener">इन्स्टॉल पेज</a> उघडा — QR कोड, लिंक कॉपी, किंवा प्रिंट पोस्टरसाठी.',
+        'किंवा आमचे <a href="https://awgp.link/get" rel="noopener">इन्स्टॉल पेज</a> उघडा — QR कोड, लिंक कॉपी, किंवा प्रिंट पोस्टरसाठी.',
       tipHtml:
         'WhatsApp किंवा SMS मधून शेअर केलेल्या लिंक्स प्रथम वेब पृष्ठ उघडतात. अॅप इन्स्टॉल झाल्यानंतर <strong>Open in AWGP App</strong> टॅप करा.',
     },
@@ -560,7 +560,7 @@ window.AWGP_HELP_I18N.mr = {
       p2:
         'जेव्हा तुम्ही अभिप्राय पाठवता, किंवा पर्यायीपणे अनामिक क्रॅश अहवाल चालू करता, आम्हाला समस्या सोडवण्यास मदत म्हणून तुम्ही लिहिलेले आणि मर्यादित अॅप/डिव्हाइस तपशील (जसे OS आवृत्ती, अॅप आवृत्ती, आणि सूचना/सहाय्यासाठी आवश्यक तांत्रिक ओळखपट्ट्या) मिळू शकतात. अॅप चालवण्यासाठी वापरल्या जाणाऱ्या लायब्ररी/सेवा जाहिरात किंवा विक्रीसाठी नव्हे, फक्त अॅप कार्यक्षमतेसाठी डिव्हाइस किंवा इतर ID प्रक्रिया करू शकतात.',
       p3Html:
-        'आम्ही तुमची वैयक्तिक माहिती विकत नाही. पूर्ण धोरण वाचा: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">गोपनीयता धोरण</a> (अॅपमध्ये दिसते तेव्हा <strong>प्रोफाइल → तुमचा डेटा</strong> वरूनही उपलब्ध).',
+        'आम्ही तुमची वैयक्तिक माहिती विकत नाही. पूर्ण धोरण वाचा: <a href="https://awgp.link/privacy-policy.html" rel="noopener">गोपनीयता धोरण</a> (अॅपमध्ये दिसते तेव्हा <strong>प्रोफाइल → तुमचा डेटा</strong> वरूनही उपलब्ध).',
     },
     deleteData: {
       title: 'डेटा हटवण्याची विनंती',
@@ -577,7 +577,7 @@ window.AWGP_HELP_I18N.mr = {
       onDevice:
         'डिव्हाइसवर तोपर्यंत राहतो जोपर्यंत तुम्ही साफ करत नाही: वाचन प्रगती, डाउनलोड, प्लेलिस्ट, स्मरणपत्रे आणि स्थानिक प्राधान्ये. ती प्रोफाइल → स्टोरेज व्यवस्थापित करा द्वारे काढा, किंवा AWGP App अनइन्स्टॉल करा. अनइन्स्टॉल केल्याने डिव्हाइसवरील अॅप डेटा काढला जातो.',
       policyHtml:
-        'पूर्ण धोरण: <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">गोपनीयता धोरण — डेटा हटवणे</a>.',
+        'पूर्ण धोरण: <a href="https://awgp.link/privacy-policy.html#data-deletion" rel="noopener">गोपनीयता धोरण — डेटा हटवणे</a>.',
     },
     crashReports: {
       title: 'अनामिक क्रॅश अहवाल',
