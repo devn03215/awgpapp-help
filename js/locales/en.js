@@ -224,7 +224,7 @@ window.AWGP_HELP_I18N.en = {
     emailHeading: 'Email',
     emailGeneral: 'General support:',
     emailPrivacyHtml:
-      'Privacy &amp; data requests: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a>',
+      'Privacy &amp; data requests: <a href="https://awgp.link/privacy-policy.html" rel="noopener">Privacy Policy</a>',
     websiteHeading: 'Website',
     websiteBodyHtml:
       'For teachings, publications, and organizational information, visit <a href="https://www.awgp.org" rel="noopener">awgp.org</a>.',
@@ -258,7 +258,7 @@ window.AWGP_HELP_I18N.en = {
       title: 'Install on iOS & Android',
       p1: 'Download AWGP App from your device’s app store:',
       p2Html:
-        'Or open our <a href="https://awgp-share.awgp.workers.dev/get" rel="noopener">install page</a> for a QR code, copy link, or printable poster.',
+        'Or open our <a href="https://awgp.link/get" rel="noopener">install page</a> for a QR code, copy link, or printable poster.',
       tipHtml:
         'Shared links from WhatsApp or SMS open a web page first. Tap <strong>Open in AWGP App</strong> after the app is installed.',
     },
@@ -560,7 +560,7 @@ window.AWGP_HELP_I18N.en = {
       p2:
         'When you send feedback, or if you optionally enable anonymous crash reports, we may receive what you write plus limited app and device details (such as OS version, app version, and technical identifiers needed to deliver notifications or support) so we can fix issues. App libraries and services we use to run the app may process device or other IDs only for app functionality — not for advertising or sale.',
       p3Html:
-        'We do not sell your personal information. Read the full policy: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">Privacy Policy</a> (also available from <strong>Profile → Your data</strong> when shown in the app).',
+        'We do not sell your personal information. Read the full policy: <a href="https://awgp.link/privacy-policy.html" rel="noopener">Privacy Policy</a> (also available from <strong>Profile → Your data</strong> when shown in the app).',
     },
     deleteData: {
       title: 'Request data deletion',
@@ -577,7 +577,7 @@ window.AWGP_HELP_I18N.en = {
       onDevice:
         'What stays on your device only until you clear it: reading progress, downloads, playlists, reminders, and local preferences. Remove those via Profile → Manage Storage, or by uninstalling AWGP App. Uninstalling removes on-device app data.',
       policyHtml:
-        'Full policy: <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.',
+        'Full policy: <a href="https://awgp.link/privacy-policy.html#data-deletion" rel="noopener">Privacy Policy — Data deletion</a>.',
     },
     crashReports: {
       title: 'Anonymous crash reports',

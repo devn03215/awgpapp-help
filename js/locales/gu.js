@@ -224,7 +224,7 @@ window.AWGP_HELP_I18N.gu = {
     emailHeading: 'ઇમેઇલ',
     emailGeneral: 'સામાન્ય સહાય:',
     emailPrivacyHtml:
-      'ગોપનીયતા અને ડેટા વિનંતીઓ: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">ગોપનીયતા નીતિ</a>',
+      'ગોપનીયતા અને ડેટા વિનંતીઓ: <a href="https://awgp.link/privacy-policy.html" rel="noopener">ગોપનીયતા નીતિ</a>',
     websiteHeading: 'વેબસાઇટ',
     websiteBodyHtml:
       'શિક્ષણ, પ્રકાશનો અને સંગઠનાત્મક માહિતી માટે <a href="https://www.awgp.org" rel="noopener">awgp.org</a> જુઓ.',
@@ -258,7 +258,7 @@ window.AWGP_HELP_I18N.gu = {
       title: 'iOS અને Android પર ઇન્સ્ટૉલ કરો',
       p1: 'તમારા ડિવાઇસના ઍપ સ્ટોરમાંથી AWGP App ડાઉનલોડ કરો:',
       p2Html:
-        'અથવા અમારું <a href="https://awgp-share.awgp.workers.dev/get" rel="noopener">ઇન્સ્ટૉલ પેજ</a> ખોલો — QR કોડ, લિંક કૉપી, અથવા પ્રિન્ટ પોસ્ટર માટે.',
+        'અથવા અમારું <a href="https://awgp.link/get" rel="noopener">ઇન્સ્ટૉલ પેજ</a> ખોલો — QR કોડ, લિંક કૉપી, અથવા પ્રિન્ટ પોસ્ટર માટે.',
       tipHtml:
         'WhatsApp અથવા SMSથી શેર કરેલી લિંક્સ પહેલા વેબ પૃષ્ઠ ખોલે છે. ઍપ ઇન્સ્ટૉલ થયા પછી <strong>Open in AWGP App</strong> ટૅપ કરો.',
     },
@@ -560,7 +560,7 @@ window.AWGP_HELP_I18N.gu = {
       p2:
         'જ્યારે તમે પ્રતિભાવ મોકલો, અથવા વૈકલ્પિક રીતે અનામી ક્રૅશ રિપોર્ટ ચાલુ કરો, અમને સમસ્યાઓ ઠીક કરવા માટે તમે લખેલી વસ્તુ સાથે મર્યાદિત ઍપ અને ડિવાઇસ વિગતો (જેમ કે OS વર્ઝન, ઍપ વર્ઝન, અને સૂચના/સહાય માટે જરૂરી તકનીકી ઓળખકર્તા) મળી શકે. ઍપ ચલાવવા વપરાતી લાઇબ્રેરી/સેવાઓ જાહેરાત કે વેચાણ માટે નહીં, માત્ર ઍપ કાર્યક્ષમતા માટે ડિવાઇસ અથવા અન્ય ID પ્રક્રિયા કરી શકે.',
       p3Html:
-        'અમે તમારી વ્યક્તિગત માહિતી વેચતા નથી. સંપૂર્ણ નીતિ વાંચો: <a href="https://devn03215.github.io/privacy-policy/" rel="noopener">ગોપનીયતા નીતિ</a> (ઍપમાં દેખાય ત્યારે <strong>પ્રોફાઇલ → તમારો ડેટા</strong>થી પણ ઉપલબ્ધ).',
+        'અમે તમારી વ્યક્તિગત માહિતી વેચતા નથી. સંપૂર્ણ નીતિ વાંચો: <a href="https://awgp.link/privacy-policy.html" rel="noopener">ગોપનીયતા નીતિ</a> (ઍપમાં દેખાય ત્યારે <strong>પ્રોફાઇલ → તમારો ડેટા</strong>થી પણ ઉપલબ્ધ).',
     },
     deleteData: {
       title: 'ડેટા કાઢી નાખવાની વિનંતી',
@@ -577,7 +577,7 @@ window.AWGP_HELP_I18N.gu = {
       onDevice:
         'ડિવાઇસ પર ત્યાં સુધી રહે છે જ્યાં સુધી તમે સાફ ન કરો: વાંચન પ્રગતિ, ડાઉનલોડ, પ્લેલિસ્ટ, રિમાઇન્ડર અને સ્થાનિક પસંદગીઓ. તેને પ્રોફાઇલ → સ્ટોરેજ મેનેજ કરો દ્વારા દૂર કરો, અથવા AWGP App અનઇન્સ્ટૉલ કરો. અનઇન્સ્ટૉલ કરવાથી ડિવાઇસ પરનો ઍપ ડેટા દૂર થાય છે.',
       policyHtml:
-        'સંપૂર્ણ નીતિ: <a href="https://devn03215.github.io/privacy-policy/#data-deletion" rel="noopener">ગોપનીયતા નીતિ — ડેટા કાઢી નાખવું</a>.',
+        'સંપૂર્ણ નીતિ: <a href="https://awgp.link/privacy-policy.html#data-deletion" rel="noopener">ગોપનીયતા નીતિ — ડેટા કાઢી નાખવું</a>.',
     },
     crashReports: {
       title: 'અનામી ક્રૅશ રિપોર્ટ',

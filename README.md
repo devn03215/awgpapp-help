@@ -5,13 +5,9 @@ Static help site for the AWGP App ([HelpKit](https://helpkit.so)-style UI).
 
 ## Live site
 
-Hosted on GitHub Pages under [devn03215](https://github.com/devn03215):
+[awgp.link/help/](https://awgp.link/help/) and [awgp.app/help/](https://awgp.app/help/) serve the help center. The old GitHub Pages site redirects visitors to `awgp.link`, keeping the article, language query, and section fragment.
 
-**https://devn03215.github.io/awgpapp-help/**
-
-(Same account as [awgp-share](https://devn03215.github.io/awgp-share/), [awgp-books](https://devn03215.github.io/awgp-books/), and [privacy-policy](https://devn03215.github.io/privacy-policy/).)
-
-See [HOSTING.txt](./HOSTING.txt) for deploy steps.
+Canonical content is in `help-landing/` in `shiv213/awgp-mobile`. Push changes there to `main`; its Cloudflare website workflow deploys both domains. This repository keeps the old Pages address working. See [HOSTING.txt](./HOSTING.txt).
 
 ## Local preview
 
@@ -26,7 +22,7 @@ Open with a language: `http://localhost:3000/?lang=hi` (also `gu`, `mr`; English
 - App Profile opens Help / FAQ with `?lang=` matching the in-app UI language (`en` / `hi` / `gu` / `mr`).
 - Strings live in `js/locales/{en,hi,gu,mr}.js`. HTML uses `data-i18n` / `data-i18n-html` / `data-i18n-placeholder`.
 - `js/i18n.js` reads `?lang=`, keeps it in `sessionStorage`, rewrites internal links, and shows a language switcher.
-- Until you copy this folder to `awgpapp-help` and push (see HOSTING.txt), production Pages will not show new translations even though the app already appends `?lang=`.
+- Publish translations from `help-landing/` in the app repository to update both domains.
 
 ## Structure
 
@@ -46,12 +42,12 @@ help-landing/
 ```
 
 Internal engineering changelog (Keep a Changelog): `docs/CHANGELOG.md` in the app repo.  
-When you cut a store release, update both `docs/CHANGELOG.md` and the What’s New page (plus locale strings), then deploy this folder to Pages (see HOSTING.txt).
+When you cut a store release, update both `docs/CHANGELOG.md` and the What’s New page (plus locale strings), then push the canonical content to `main` in the app repository.
 
 ## Edit content
 
 1. Change English (and translations) in `js/locales/*.js`, and matching `data-i18n` keys in HTML.
-2. Copy to `devn03215/awgpapp-help` and push (see HOSTING.txt).
+2. Update the canonical `help-landing/` content in the app repository and push to `main`.
 
 - **New article:** add to `js/articles.js`, locale `articles.*` / page keys, and a matching section `id` in `pages/*.html`.
 - **New category:** add to `categories` in `articles.js` + `categories.*` in locales, and create `pages/your-category.html`.
@@ -59,10 +55,10 @@ When you cut a store release, update both `docs/CHANGELOG.md` and the What’s N
 ## Link from the app
 
 ```
-https://devn03215.github.io/awgpapp-help/
-https://devn03215.github.io/awgpapp-help/?lang=hi
-https://devn03215.github.io/awgpapp-help/pages/faq.html?lang=hi
-https://devn03215.github.io/awgpapp-help/pages/whats-new.html?lang=hi
+https://awgp.link/help/
+https://awgp.link/help/?lang=hi
+https://awgp.link/help/pages/faq.html?lang=hi
+https://awgp.link/help/pages/whats-new.html?lang=hi
 ```
 
-Update once when you move to a custom domain.
+Both domains preserve the language query.
